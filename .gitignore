@@ -55,6 +55,15 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+#FMOD Integration
+Assets/FMODStudioCache.asset
+Assets/StreamingAssets/*.bank
+fmod.log
+fmod_editor.log
+.cache/
+.user/
+.restore/
+
 # Crashlytics generated file
 crashlytics-build.properties
 
