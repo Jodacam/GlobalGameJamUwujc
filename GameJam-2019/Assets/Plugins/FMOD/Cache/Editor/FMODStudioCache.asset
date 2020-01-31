@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637160582811641199
+  lastModified: 637160693611817586
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -60,7 +60,7 @@ MonoBehaviour:
   - {fileID: 4937207294830362915}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637160582811641199
+  stringsBankWriteTime: 637160693611817586
   cacheVersion: 3
 --- !u!114 &1189076256406911711
 MonoBehaviour:
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637160582811641199
+  lastModified: 637160693611815253
   LoadResult: 0
   FileSizes:
   - Name: Desktop
