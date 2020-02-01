@@ -13,9 +13,9 @@ public class BigController : PlayerController
     private bool isGrabbing;
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        InitComponents();
+        base.Start();
         isGrabbing = false;
     }
 
@@ -44,6 +44,7 @@ public class BigController : PlayerController
             isGrabbing = true;
             itemInFocus.transform.SetParent(holderObject.transform);
             itemInFocus.transform.localPosition = Vector2.zero;
+            itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 0;
         }
     }
 
@@ -51,6 +52,7 @@ public class BigController : PlayerController
     {
         itemInFocus.transform.SetParent(null);
         itemInFocus.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce.x * direction, throwForce.y), ForceMode2D.Impulse);
+        itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 1;
         isGrabbing = false;
         itemInFocus = null;
     }

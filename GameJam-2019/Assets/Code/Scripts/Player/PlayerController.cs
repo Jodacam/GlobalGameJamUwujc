@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
     private bool changeController = true;
 
-    public void Start()
+    public virtual void Start()
     {
         InitComponents();
     }
