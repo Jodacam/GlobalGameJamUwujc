@@ -45,6 +45,8 @@ public class BigController : PlayerController
             itemInFocus.transform.SetParent(holderObject.transform);
             itemInFocus.transform.localPosition = Vector2.zero;
             itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 0;
+            if (itemInFocus.CompareTag("Player"))
+                itemInFocus.GetComponent<SmallController>().isGrabbed = true;
         }
     }
 
@@ -53,13 +55,15 @@ public class BigController : PlayerController
         itemInFocus.transform.SetParent(null);
         itemInFocus.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce.x * direction, throwForce.y), ForceMode2D.Impulse);
         itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 1;
+        if (itemInFocus.CompareTag("Player"))
+            itemInFocus.GetComponent<SmallController>().isGrabbed = false;
         isGrabbing = false;
         itemInFocus = null;
     }
 
     private void UpdateHolderObjectPosition()
     {
-        holderObject.transform.localPosition = new Vector2(Mathf.Abs(holderObject.transform.localPosition.x) * direction, holderObject.transform.localPosition.y);
+        holderObject.transform.localPosition = new Vector2(holderObject.transform.localPosition.x, holderObject.transform.localPosition.y);
         if (isGrabbing)
             itemInFocus.transform.localPosition = Vector2.zero;
     }
