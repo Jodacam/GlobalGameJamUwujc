@@ -20,8 +20,8 @@ public class InputState
 
 
     public void Process(){
-        this.down = Input.GetButton(inputName);
-        this.press = Input.GetButtonDown(inputName);
+        this.down = Input.GetButtonDown(inputName);
+        this.press = Input.GetButton(inputName);
         this.release = Input.GetButtonUp(inputName);
     }
 
