@@ -33,6 +33,10 @@ MonoBehaviour:
     down: 0
     press: 0
     release: 0
+  startButton:
+    down: 0
+    press: 0
+    release: 0
   ActionButton: 
   anim: {fileID: 490064721815060290}
   body: {fileID: 490064721815060289}
@@ -56,6 +60,7 @@ MonoBehaviour:
     name: 
     fmodFile: 
     parameters: []
+  isGrabbed: 0
   maxBullets: 5
   timeBetweenShoots: 1
 --- !u!1 &1516364523969171929
@@ -968,11 +973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.z
