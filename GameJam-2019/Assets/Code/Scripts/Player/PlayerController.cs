@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     public Sound walkSound;
 
-    public void Start()
+    public virtual void Start()
     {
         InitComponents();
     }

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 9461974401035382}
   - component: {fileID: 9461974401035383}
   m_Layer: 8
-  m_Name: Player One
-  m_TagString: Untagged
+  m_Name: Player_base
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,8 +90,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   canJump: 1
+  direction: 1
   xInput: 0
   yInput: 0
+  actionButton:
+    down: 0
+    press: 0
+    release: 0
+  jumpButton:
+    down: 0
+    press: 0
+    release: 0
+  changeButton:
+    down: 0
+    press: 0
+    release: 0
+  pointButton:
+    down: 0
+    press: 0
+    release: 0
   ActionButton: Jump
   anim: {fileID: 9461974401035387}
   body: {fileID: 9461974401035384}
@@ -99,6 +116,7 @@ MonoBehaviour:
   jumpForce: 10
   isGround: 1
   playerNumber: 0
+  otherPlayer: {fileID: 0}
   footColission: {fileID: 0}
 --- !u!212 &9461974401035382
 SpriteRenderer:
