@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     public PlayerType type = PlayerType.CharacterOne;
 
     public bool canJump = false;
+
+    //Puede ser -1 o 1
+    [SerializeField]protected int direction = 1;
+
     public float xInput = 0.0f;
 
     public float yInput = 0.0f;
@@ -145,6 +149,9 @@ public class PlayerController : MonoBehaviour
     {
         float xmove = xInput * horizontalSpeed * Time.deltaTime;
         transform.Translate(new Vector3(xmove, 0, 0));
+
+        if(Mathf.Abs(xInput)>0.01f)
+            direction = (int)Mathf.Sign(xInput);
 
         this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
         this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
