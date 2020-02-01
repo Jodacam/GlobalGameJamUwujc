@@ -24,8 +24,9 @@ public class SmallController : PlayerController
 
 
 
+    public Sound shootSound;
 
-
+    
 
     public int maxBullets = 5;
 
@@ -61,9 +62,12 @@ public class SmallController : PlayerController
             DoJump();
         }
         CheckGround();
-        if (changeButton.down)
+        if (changeButton.down && changeController)
         {
             ChangePlayers();
+        }
+        else{
+            changeController = true;
         }
         ProcessShot();
     }
@@ -132,6 +136,8 @@ public class SmallController : PlayerController
                 actualPool = (actualPool + 1) % this.bulletPool.Length;
                 //Instantiate(bullet, shootPoint.position, Quaternion.identity);
                 shootDelay = timeBetweenShoots;
+
+                this.shootSound.Play(transform,body);
             }
         }
     }
