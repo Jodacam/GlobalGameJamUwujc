@@ -25,14 +25,6 @@ public class PressureButton : MonoBehaviour
         
     }
 
-    private void LateUpdate()
-    {
-        if (stayActive)
-            active = true;
-        else if (active == false)
-            negativeTrigger.Invoke();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<BigController>())
@@ -47,7 +39,6 @@ public class PressureButton : MonoBehaviour
         if (collision.GetComponent<BigController>())
         {
             active = true;
-            stayActive = true;
         }
     }
 
@@ -56,7 +47,18 @@ public class PressureButton : MonoBehaviour
         if (collision.GetComponent<BigController>())
         {
             active = false;
+            negativeTrigger.Invoke();
         }
+    }
+
+    public void DebugTestingActive()
+    {
+        Debug.Log("HOLA");
+    }
+
+    public void DebugTestingInactive()
+    {
+        Debug.Log("ADIOS");
     }
 
 
