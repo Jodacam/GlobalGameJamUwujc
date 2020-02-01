@@ -33,6 +33,10 @@ MonoBehaviour:
     down: 0
     press: 0
     release: 0
+  startButton:
+    down: 0
+    press: 0
+    release: 0
   ActionButton: 
   anim: {fileID: 0}
   body: {fileID: 0}
@@ -125,6 +129,10 @@ PrefabInstance:
     - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.x
