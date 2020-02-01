@@ -68,16 +68,19 @@ public class SiliconeBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(this.state == BulletState.Moving)
         CheckCollision(other);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if(this.state == BulletState.Moving)
         CheckCollision(other.gameObject.GetComponent<Collider2D>());
     }
 
     private void CheckCollision(Collider2D other)
     {
+        
         if (other.tag != "Player" && other.tag != "Holder")
         {
             if (other.tag == "Bullet")

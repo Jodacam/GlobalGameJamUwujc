@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2363914921553718998}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,12 +146,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 6569519726336652817}
+  stickSound:
+    name: 
+    fmodFile: 
+    parameters: []
   bulletSprite: {fileID: 21300000, guid: bc782995bb64cb4498e80a6313eff218, type: 3}
   stickSprite: {fileID: 21300000, guid: 0aeb300f519cf1d47acefcb39ae50daf, type: 3}
   shootCollider: {fileID: 1451075555299201853}
   stickCollider: {fileID: 134571401195944898}
   body: {fileID: 5547406815268939310}
-  speed: {x: 1, y: 1}
+  speed: {x: 5, y: 2}
   state: 0
   actualDir: {x: 0, y: 0}
 --- !u!61 &134571401195944898

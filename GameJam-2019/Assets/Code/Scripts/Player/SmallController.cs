@@ -76,6 +76,10 @@ public class SmallController : PlayerController
     protected new void ProcessMovement()
     {
 
+        if (Mathf.Abs(xInput) > 0.01f){
+            direction = (int)Mathf.Sign(xInput);
+            this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
+        }
 
         if (!this.pointButton.press)
         {
@@ -88,7 +92,7 @@ public class SmallController : PlayerController
 
             if (xInput != 0)
             {
-                this.shootDir = new Vector2(xInput, 0).normalized;
+                this.shootDir = new Vector2(xInput, 0).normalized  ;
             }
             pointer.SetActive(false);
 
@@ -104,6 +108,8 @@ public class SmallController : PlayerController
 
             pointer.transform.position = transform.position + new Vector3(this.shootDir.x, this.shootDir.y);
         }
+
+
 
     }
 

@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     public bool canJump = false;
 
     //Puede ser -1 o 1
-    [SerializeField]protected int direction = 1;
+    [SerializeField] protected int direction = 1;
 
     public float xInput = 0.0f;
 
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public InputState pointButton;
 
-    
+
 
     public string ActionButton;
     public Animator anim;
@@ -120,20 +120,29 @@ public class PlayerController : MonoBehaviour
 
     public virtual void Update()
     {
-        ProcessInput();
-        ProcessMovement();
-        if (isGround)
+        if (!GameManager.Instance.pause)
         {
-            DoJump();
-        }
-        CheckGround();
-        if (changeButton.down && changeController)
-        {
-            ChangePlayers();
-        }else{
+            ProcessInput();
+            ProcessMovement();
+            if (isGround)
+            {
+                DoJump();
+            }
+            CheckGround();
+            if (changeButton.down && changeController)
+            {
+                ChangePlayers();
+            }
+            else
+            {
 
-            changeController = true;
+                changeController = true;
+            }
         }
+    }
+
+    public void ProcessPause(){
+
     }
 
     protected void DoJump()
@@ -153,8 +162,10 @@ public class PlayerController : MonoBehaviour
         float xmove = xInput * horizontalSpeed * Time.deltaTime;
         transform.Translate(new Vector3(xmove, 0, 0));
 
-        if(Mathf.Abs(xInput)>0.01f)
+        if (Mathf.Abs(xInput) > 0.01f){
             direction = (int)Mathf.Sign(xInput);
+            this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
+        }
 
         this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
         this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
@@ -203,7 +214,7 @@ public class PlayerController : MonoBehaviour
 
     public void ChangePlayers()
     {
-        this.otherPlayer.playerNumber = this.otherPlayer.playerNumber  == 1 ? 0 : 1;
+        this.otherPlayer.playerNumber = this.otherPlayer.playerNumber == 1 ? 0 : 1;
         this.otherPlayer.setButtons();
 
         this.ChangeInputs();
@@ -219,7 +230,8 @@ public class PlayerController : MonoBehaviour
 
 
     protected void setButtons()
-    {   this.changeController = false;
+    {
+        this.changeController = false;
         if (playerNumber == 0)
         {
             actionButton = new InputState("action");
@@ -247,8 +259,9 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void Step(){
-        this.walkSound.Play(transform,body);
+    public void Step()
+    {
+        this.walkSound.Play(transform, body);
     }
 }
 

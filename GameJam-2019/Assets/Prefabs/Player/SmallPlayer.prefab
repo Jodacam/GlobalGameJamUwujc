@@ -36,7 +36,7 @@ MonoBehaviour:
   ActionButton: 
   anim: {fileID: 490064721815060290}
   body: {fileID: 490064721815060289}
-  horizontalSpeed: 1
+  horizontalSpeed: 3
   jumpForce: 10
   isGround: 1
   playerNumber: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   changeController: 1
   walkSound:
     name: 
-    fmodFile: 
+    fmodFile: event:/SFX/Characters/Step Small
     parameters: []
   shootPoint: {fileID: 8933166372821708720}
   pointer: {fileID: 2772063324256641559}

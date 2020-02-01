@@ -7,7 +7,7 @@ using Doozy.Engine.UI;
 //Manager del juego. Aquí podemos guardar los progresos que se van haciendo e ir compronaod con los objetos.
 public class GameManager : SerializedMonoBehaviour
 {
-    private GameManager _instance;
+    private static GameManager _instance;
 
     public bool pause = false;
 
@@ -23,7 +23,7 @@ public class GameManager : SerializedMonoBehaviour
     public Dictionary<string, GameObject> maps;
 
 
-    public GameManager Instance
+    public static GameManager Instance
     {
         get
         {
@@ -37,6 +37,17 @@ public class GameManager : SerializedMonoBehaviour
     void Start()
     {
 
+    }
+
+
+    public void Pause(){
+        this.pause = true;
+        this.pauseMenu.Show();
+    }
+
+    public void UnPause(){
+        this.pause = false;
+        this.pauseMenu.Hide();
     }
 
 
@@ -55,7 +66,7 @@ public class GameManager : SerializedMonoBehaviour
     public IEnumerator loadMap(string map)
     {
         load.Show();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
         this.actualMap.SetActive(false);
 
         if (maps.ContainsKey(map))
