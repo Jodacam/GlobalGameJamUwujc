@@ -143,6 +143,7 @@ public class SmallController : PlayerController
 
                 bulletInstance.Init(pointer.transform.position, Quaternion.identity, this.shootDir);
 
+                this.anim.SetTrigger("action");
 
                 actualPool = (actualPool + 1) % this.bulletPool.Length;
                 //Instantiate(bullet, shootPoint.position, Quaternion.identity);
