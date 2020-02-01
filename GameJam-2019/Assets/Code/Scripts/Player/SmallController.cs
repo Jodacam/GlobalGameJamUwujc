@@ -23,6 +23,10 @@ public class SmallController : PlayerController
     private Vector2 shootDir;
 
 
+
+
+
+
     public int maxBullets = 5;
 
     public float timeBetweenShoots = 1.0f;
@@ -41,7 +45,7 @@ public class SmallController : PlayerController
         {
             for (int i = 0; i < this.maxBullets; i++)
             {
-                this.bulletPool[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity);
+                this.bulletPool[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity, this.poolContainer.transform);
                 this.bulletPool[i].gameObject.SetActive(false);
             }
         }
@@ -59,7 +63,7 @@ public class SmallController : PlayerController
         CheckGround();
         if (changeButton.down)
         {
-            ChangeInputs();
+            ChangePlayers();
         }
         ProcessShot();
     }
@@ -68,26 +72,33 @@ public class SmallController : PlayerController
     protected new void ProcessMovement()
     {
 
+
         if (!this.pointButton.press)
         {
-            this.anim.SetBool("hold",false);
+            this.anim.SetBool("hold", false);
             float xmove = xInput * horizontalSpeed * Time.deltaTime;
             transform.Translate(new Vector3(xmove, 0, 0));
 
             this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
             this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
 
-            this.shootDir = new Vector2(xInput,0);
+            if (xInput != 0)
+            {
+                this.shootDir = new Vector2(xInput, 0).normalized;
+            }
             pointer.SetActive(false);
+
+            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,0);
         }
         else
         {
-            this.anim.SetBool("hold",true);
+            
+            this.anim.SetBool("hold", true);
 
             pointer.SetActive(true);
-            this.shootDir = new Vector2(xInput,yInput).normalized;
+            this.shootDir = new Vector2(xInput, yInput).normalized;
 
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,this.shootDir.y);
+            pointer.transform.position = transform.position + new Vector3(this.shootDir.x, this.shootDir.y);
         }
 
     }
@@ -105,7 +116,7 @@ public class SmallController : PlayerController
         }
         else
         {
-            if (actionButton.press)
+            if (actionButton.down)
             {
                 var bulletInstance = this.bulletPool[actualPool];
 
@@ -115,10 +126,10 @@ public class SmallController : PlayerController
                 }
 
 
-                bulletInstance.Init(shootPoint.position, Quaternion.identity, this.shootDir);
+                bulletInstance.Init(pointer.transform.position, Quaternion.identity, this.shootDir);
 
 
-                actualPool = this.bulletPool.Length % (actualPool + 1);
+                actualPool = (actualPool + 1) % this.bulletPool.Length;
                 //Instantiate(bullet, shootPoint.position, Quaternion.identity);
                 shootDelay = timeBetweenShoots;
             }

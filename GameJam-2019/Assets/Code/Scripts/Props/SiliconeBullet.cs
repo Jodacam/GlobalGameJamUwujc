@@ -10,6 +10,9 @@ public class SiliconeBullet : MonoBehaviour
 
     public SpriteRenderer render;
 
+    public Sprite bulletSprite;
+    public Sprite stickSprite;
+
     public Collider2D shootCollider;
 
     public Collider2D stickCollider;
@@ -27,7 +30,7 @@ public class SiliconeBullet : MonoBehaviour
     [HideInInspector]
     public BulletState state;
 
-    private Vector2 actualDir = Vector2.zero;
+    public Vector2 actualDir = Vector2.zero;
     void Start()
     {
         if (render == null)
@@ -36,6 +39,8 @@ public class SiliconeBullet : MonoBehaviour
         }
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
@@ -43,8 +48,8 @@ public class SiliconeBullet : MonoBehaviour
         {
             case BulletState.Moving:
 
-                Vector2 deltaMove = Vector2.Scale(speed,actualDir) * Time.deltaTime;
-                body.MovePosition(deltaMove);
+                Vector2 deltaMove = Vector2.Scale(speed, actualDir) * Time.deltaTime;
+                body.transform.Translate(deltaMove);
                 break;
 
             default:
@@ -54,12 +59,68 @@ public class SiliconeBullet : MonoBehaviour
 
     public void Reset()
     {
-        this.state = BulletState.Moving;
+        this.ChangeState(BulletState.Moving);
+        gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        CheckCollision(other);
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        CheckCollision(other.gameObject.GetComponent<Collider2D>());
+    }
+
+    private void CheckCollision(Collider2D other)
+    {
+        if (other.tag != "Player")
+        {
+            var objectFixable = other.GetComponent<IFixable>();
+
+            if (objectFixable != null && objectFixable.CanFix())
+            {
+                objectFixable.Fix();
+            }
+            else
+            {
+
+                ChangeState(BulletState.Stick);
+            }
+        }
+    }
+
+    public void ChangeState(BulletState newState)
+    {
+
+        this.state = newState;
+
+        switch (state)
+        {
+            case BulletState.Moving:
+                this.render.sprite = this.bulletSprite;
+                this.shootCollider.enabled = true;
+                this.stickCollider.enabled = false;
+                this.gameObject.layer = LayerMask.NameToLayer("Default");
+                break;
+            
+            case BulletState.Stick:
+                this.gameObject.layer = LayerMask.NameToLayer("Scene");
+                this.render.sprite = this.stickSprite;
+                this.shootCollider.enabled = false;
+                this.stickCollider.enabled = true;
+                break;
+            default:
+                break;
+        }
+
     }
 
     internal void Init(Vector3 position, Quaternion rotation, Vector2 shootDir)
     {
+        transform.SetParent(null);
         transform.SetPositionAndRotation(position, rotation);
+        gameObject.SetActive(true);
         this.actualDir = shootDir;
     }
 }
