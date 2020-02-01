@@ -28,6 +28,7 @@ public class BigController : PlayerController
         {
             if(isGrabbing)
             {
+                this.anim.SetTrigger("action");
                 Throw();
             }
             else
@@ -47,6 +48,7 @@ public class BigController : PlayerController
             itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 0;
             if (itemInFocus.CompareTag("Player"))
                 itemInFocus.GetComponent<SmallController>().isGrabbed = true;
+            this.anim.SetTrigger("action");
         }
     }
 

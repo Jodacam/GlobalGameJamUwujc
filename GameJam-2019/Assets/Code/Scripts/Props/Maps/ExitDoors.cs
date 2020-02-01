@@ -7,10 +7,13 @@ public class ExitDoors : MonoBehaviour
 
     public List<PlayerController> players;
 
+    public Sprite[] sprites;
     public string mapToLoad = "";
 
+
+    public SpriteRenderer render;
     private void Start() {
-        
+    
     }
 
 
@@ -22,9 +25,13 @@ public class ExitDoors : MonoBehaviour
 
             players.Add(controller);
 
+            render.sprite = sprites[1];
+
             if (players.Count > 2)
             {
+                render.sprite = sprites[2];
                 GameManager.Instance.LoadMap(mapToLoad);
+                render.sprite = sprites[0];
             }
 
         }
@@ -37,6 +44,7 @@ public class ExitDoors : MonoBehaviour
             var controller = other.GetComponent<PlayerController>();
 
             players.Remove(controller);
+            render.sprite = sprites[0];
 
         }
     }

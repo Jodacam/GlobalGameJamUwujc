@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -92,7 +93,7 @@ public class SmallController : PlayerController
             float xmove = xInput * horizontalSpeed * Time.deltaTime;
             transform.Translate(new Vector3(xmove, 0, 0));
 
-            this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
+            this.anim.SetFloat(ANIM_SPEED, Math.Abs(xmove));
             this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
 
             if (xInput != 0)
