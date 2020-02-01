@@ -8,10 +8,10 @@ public class PlayerController : MonoBehaviour
 {
 
     #region Constante
-    const string ANIM_JUMP = "jump";
-    const string ANIM_SPEED = "xSpeed";
-    const string ANIM_YSPEED = "ySpeed";
-    const string ANIM_GROUND = "ground";
+    protected const string ANIM_JUMP = "jump";
+    protected const string ANIM_SPEED = "xSpeed";
+    protected const string ANIM_YSPEED = "ySpeed";
+    protected const string ANIM_GROUND = "ground";
 
     #endregion
 
@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public InputState changeButton;
+
+    [HideInInspector]
+    public InputState pointButton;
 
     
 
@@ -206,6 +209,7 @@ public class PlayerController : MonoBehaviour
             actionButton = new InputState("action");
             jumpButton = new InputState("Jump");
             changeButton = new InputState("change");
+            pointButton = new InputState("hold");
             axis = new AxisInputs()
             {
                 vertical = "Vertical",
@@ -217,6 +221,7 @@ public class PlayerController : MonoBehaviour
             actionButton = new InputState("action_1");
             jumpButton = new InputState("Jump_1");
             changeButton = new InputState("change_1");
+            pointButton = new InputState("hold_1");
             axis = new AxisInputs()
             {
                 vertical = "Vertical_1",
