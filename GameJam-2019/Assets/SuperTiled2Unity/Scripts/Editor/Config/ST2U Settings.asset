@@ -17,7 +17,7 @@ MonoBehaviour:
   m_AnimationFramerate: 20
   m_DefaultMaterial: {fileID: 0}
   m_MaterialMatchings: []
-  m_ObjectTypesXml: {fileID: 0}
+  m_ObjectTypesXml: {fileID: 4900000, guid: a62a3033853160f45a5b2919d044ad37, type: 3}
   m_ParseXmlError: 
   m_CollisionGeometryType: 1
   m_LayerColors:
@@ -53,19 +53,67 @@ MonoBehaviour:
   - {r: 1, g: 0.64705884, b: 0, a: 1}
   - {r: 0, g: 1, b: 1, a: 1}
   - {r: 0.7372549, g: 0.56078434, b: 0.56078434, a: 1}
-  m_CustomObjectTypes: []
+  m_CustomObjectTypes:
+  - m_Name: Water
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Button
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Computer
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Die
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: EntranceDoor
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: ExitDoor
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: LevelDoor
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Lever
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Movable
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Pushable
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
+  - m_Name: Suelo
+    m_Color: {r: 0.627451, g: 0.627451, b: 0.6431373, a: 1}
+    m_CustomProperties: []
   m_PrefabReplacements:
-  - m_TypeName: EnterDoor
-    m_Prefab: {fileID: 6912856736371549231, guid: bc4ac69d9fe65ca4aa62cfd4e0a9bfff,
+  - m_TypeName: Water
+    m_Prefab: {fileID: 0}
+  - m_TypeName: Button
+    m_Prefab: {fileID: 2380036667024723748, guid: f92c2b837c2f5494e8c9dd23a9c57057,
       type: 3}
-  - m_TypeName: PushBox
-    m_Prefab: {fileID: 5271938795110449410, guid: f105f5230e6b0f14fbcedb692f6b596a,
-      type: 3}
+  - m_TypeName: Computer
+    m_Prefab: {fileID: 0}
   - m_TypeName: Die
     m_Prefab: {fileID: 0}
-  - m_TypeName: EnterDoor
+  - m_TypeName: EntranceDoor
     m_Prefab: {fileID: 6912856736371549231, guid: bc4ac69d9fe65ca4aa62cfd4e0a9bfff,
       type: 3}
-  - m_TypeName: Spawn
-    m_Prefab: {fileID: 8204271556187190237, guid: 3ed2a0a372acedb47b07dcf3c031771b,
+  - m_TypeName: ExitDoor
+    m_Prefab: {fileID: 6912856736371549231, guid: bc4ac69d9fe65ca4aa62cfd4e0a9bfff,
       type: 3}
+  - m_TypeName: LevelDoor
+    m_Prefab: {fileID: 6912856736371549231, guid: bc4ac69d9fe65ca4aa62cfd4e0a9bfff,
+      type: 3}
+  - m_TypeName: Lever
+    m_Prefab: {fileID: 5974866451189165404, guid: cbb1b3e7fa34a124091d94af3c68a216,
+      type: 3}
+  - m_TypeName: Movable
+    m_Prefab: {fileID: 5271938795110449410, guid: f105f5230e6b0f14fbcedb692f6b596a,
+      type: 3}
+  - m_TypeName: Pushable
+    m_Prefab: {fileID: 5271938795110449410, guid: f105f5230e6b0f14fbcedb692f6b596a,
+      type: 3}
+  - m_TypeName: Suelo
+    m_Prefab: {fileID: 0}
