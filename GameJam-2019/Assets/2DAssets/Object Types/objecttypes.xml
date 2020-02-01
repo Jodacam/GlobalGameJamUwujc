@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="Water" color="#a0a0a4"/>
+ <objecttype name="Button" color="#a0a0a4"/>
+ <objecttype name="Computer" color="#a0a0a4"/>
+ <objecttype name="Die" color="#a0a0a4"/>
+ <objecttype name="EntranceDoor" color="#a0a0a4"/>
+ <objecttype name="ExitDoor" color="#a0a0a4"/>
+ <objecttype name="LevelDoor" color="#a0a0a4"/>
+ <objecttype name="Lever" color="#a0a0a4"/>
+ <objecttype name="Movable" color="#a0a0a4"/>
+ <objecttype name="Pushable" color="#a0a0a4"/>
+ <objecttype name="Suelo" color="#a0a0a4"/>
+</objecttypes>
