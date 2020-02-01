@@ -14,8 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   canJump: 1
+  direction: 1
   xInput: 0
   yInput: 0
+  actionButton:
+    down: 0
+    press: 0
+    release: 0
+  jumpButton:
+    down: 0
+    press: 0
+    release: 0
+  changeButton:
+    down: 0
+    press: 0
+    release: 0
+  pointButton:
+    down: 0
+    press: 0
+    release: 0
   ActionButton: 
   anim: {fileID: 490064721815060290}
   body: {fileID: 490064721815060289}
@@ -25,11 +42,20 @@ MonoBehaviour:
   playerNumber: 0
   otherPlayer: {fileID: 0}
   footColission: {fileID: 6314761332616335538}
+  changeController: 1
+  walkSound:
+    name: 
+    fmodFile: 
+    parameters: []
   shootPoint: {fileID: 8933166372821708720}
   pointer: {fileID: 2772063324256641559}
   bulletPrefab: {fileID: 3911073580239865827, guid: 93ccc2eb19aa5324688327443d66219a,
     type: 3}
   poolContainer: {fileID: 4356800202486828850}
+  shootSound:
+    name: 
+    fmodFile: 
+    parameters: []
   maxBullets: 5
   timeBetweenShoots: 1
 --- !u!1 &2772063324256641559
@@ -188,6 +214,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9461974401035382, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

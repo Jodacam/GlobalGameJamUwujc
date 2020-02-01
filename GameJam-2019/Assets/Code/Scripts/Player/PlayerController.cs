@@ -78,7 +78,9 @@ public class PlayerController : MonoBehaviour
 
     public CircleCollider2D footColission;
 
-    private bool changeController = true;
+    public bool changeController = true;
+
+    public Sound walkSound;
 
     public void Start()
     {
@@ -129,6 +131,7 @@ public class PlayerController : MonoBehaviour
         {
             ChangePlayers();
         }else{
+
             changeController = true;
         }
     }
@@ -241,6 +244,11 @@ public class PlayerController : MonoBehaviour
                 horizontal = "Horizontal_1"
             };
         }
+    }
+
+
+    public void Step(){
+        this.walkSound.Play(transform,body);
     }
 }
 

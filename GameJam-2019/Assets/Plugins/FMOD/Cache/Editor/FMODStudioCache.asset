@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637160977653595237
+  lastModified: 637160693611817586
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -58,7 +58,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 13378
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,14 +73,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -9087173361617540311}
-  - {fileID: -1412750225985053945}
+  - {fileID: 7690897745776507457}
   EditorEvents:
   - {fileID: 1189076256406911711}
   MasterBanks:
-  - {fileID: -1412750225985053945}
+  - {fileID: 7690897745776507457}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637160977653595237
+  stringsBankWriteTime: 637160693611817586
   cacheVersion: 3
 --- !u!114 &1189076256406911711
 MonoBehaviour:
@@ -97,7 +97,7 @@ MonoBehaviour:
   Path: event:/Folder/New Event
   guid: d627d8a3d89b3244b5cadbb239a770f8
   Banks:
-  - {fileID: -1412750225985053945}
+  - {fileID: 7690897745776507457}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -165,6 +165,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13378
   Exists: 0
+--- !u!114 &7690897745776507457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637160693611815253
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 13378
+  Exists: 1
 --- !u!114 &8111878746364653173
 MonoBehaviour:
   m_ObjectHideFlags: 0
