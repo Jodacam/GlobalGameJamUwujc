@@ -754,7 +754,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -815,7 +815,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &450519014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  BehaviorAtStart: 0
+  BehaviorAtStart: 1
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   DeselectAnyButtonSelectedOnHide: 0
   DeselectAnyButtonSelectedOnShow: 0
@@ -1860,7 +1860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &857411379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1939,7 +1939,7 @@ MonoBehaviour:
   AutoHideAfterShow: 0
   AutoHideAfterShowDelay: 3
   AutoSelectButtonAfterShow: 0
-  BehaviorAtStart: 0
+  BehaviorAtStart: 1
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   DeselectAnyButtonSelectedOnHide: 0
   DeselectAnyButtonSelectedOnShow: 0
@@ -2713,7 +2713,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5084,7 +5084,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 0}
 --- !u!114 &1043574180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5472,8 +5471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
+  m_SubmitButton: Jump
+  m_CancelButton: action
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
@@ -5574,7 +5573,7 @@ MonoBehaviour:
     InputMode: 2
     KeyCode: 13
     KeyCodeAlt: 32
-    VirtualButtonName: Submit
+    VirtualButtonName: Jump
     VirtualButtonNameAlt: Jump
   LongClickRegisterInterval: 0.5
   OnPointerEnter:
@@ -7837,7 +7836,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 0}
 --- !u!114 &1215826752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8156,6 +8154,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
   pause: 0
+  pauseMenu: {fileID: 857411382}
+  load: {fileID: 450519017}
   actualMap: {fileID: 1048687359}
   players: []
 --- !u!4 &1413071311
@@ -8536,12 +8536,12 @@ PrefabInstance:
     - target: {fileID: 490064721815060291, guid: f9399ffe048dcc1438634ddf5c207b2f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.84
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 490064721815060291, guid: f9399ffe048dcc1438634ddf5c207b2f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 490064721815060291, guid: f9399ffe048dcc1438634ddf5c207b2f,
         type: 3}
@@ -8588,6 +8588,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 490064721815060291, guid: f9399ffe048dcc1438634ddf5c207b2f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 490064721815060291, guid: f9399ffe048dcc1438634ddf5c207b2f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 490064721815060301, guid: f9399ffe048dcc1438634ddf5c207b2f,
         type: 3}
       propertyPath: m_Name
@@ -8607,6 +8617,16 @@ PrefabInstance:
     - target: {fileID: 2673741855923537201, guid: f9399ffe048dcc1438634ddf5c207b2f,
         type: 3}
       propertyPath: canJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744262972224132613, guid: f9399ffe048dcc1438634ddf5c207b2f,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875632562894683907, guid: f9399ffe048dcc1438634ddf5c207b2f,
+        type: 3}
+      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6921929132690440818, guid: f9399ffe048dcc1438634ddf5c207b2f,
