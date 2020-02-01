@@ -9,6 +9,7 @@ public class SiliconeBullet : MonoBehaviour
 {
 
     public SpriteRenderer render;
+    public Sound stickSound;
 
     public Sprite bulletSprite;
     public Sprite stickSprite;
@@ -47,9 +48,11 @@ public class SiliconeBullet : MonoBehaviour
         switch (state)
         {
             case BulletState.Moving:
-
-                Vector2 deltaMove = Vector2.Scale(speed, actualDir) * Time.deltaTime;
-                body.transform.Translate(deltaMove);
+                if (this.gameObject.activeSelf)
+                {
+                    Vector2 deltaMove = Vector2.Scale(speed, actualDir) * Time.deltaTime;
+                    body.transform.Translate(deltaMove);
+                }
                 break;
 
             default:
@@ -68,26 +71,39 @@ public class SiliconeBullet : MonoBehaviour
         CheckCollision(other);
     }
 
-    private void OnCollisionEnter(Collision other) {
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         CheckCollision(other.gameObject.GetComponent<Collider2D>());
     }
 
     private void CheckCollision(Collider2D other)
     {
-        if (other.tag != "Player")
+        if (other.tag != "Player" && other.tag != "Holder")
         {
-            var objectFixable = other.GetComponent<IFixable>();
-
-            if (objectFixable != null && objectFixable.CanFix())
+            if (other.tag == "Bullet")
             {
-                objectFixable.Fix();
+                this.gameObject.SetActive(false);
             }
             else
             {
+                var objectFixable = other.GetComponent<IFixable>();
 
-                ChangeState(BulletState.Stick);
+                if (objectFixable != null && objectFixable.CanFix())
+                {
+                    objectFixable.Fix();
+                    this.gameObject.SetActive(false);
+
+                }
+                else
+                {
+
+                    ChangeState(BulletState.Stick);
+
+                }
             }
         }
+
+
     }
 
     public void ChangeState(BulletState newState)
@@ -103,8 +119,9 @@ public class SiliconeBullet : MonoBehaviour
                 this.stickCollider.enabled = false;
                 this.gameObject.layer = LayerMask.NameToLayer("Default");
                 break;
-            
+
             case BulletState.Stick:
+                this.stickSound.Play(transform);
                 this.gameObject.layer = LayerMask.NameToLayer("Scene");
                 this.render.sprite = this.stickSprite;
                 this.shootCollider.enabled = false;
