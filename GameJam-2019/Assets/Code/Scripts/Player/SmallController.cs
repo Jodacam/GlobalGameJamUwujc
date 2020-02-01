@@ -57,6 +57,7 @@ public class SmallController : PlayerController
     // Update is called once per frame
     new void Update()
     {
+        if(!GameManager.Instance.pause){
         ProcessInput();
         ProcessMovement();
         if (isGround)
@@ -72,6 +73,8 @@ public class SmallController : PlayerController
             changeController = true;
         }
         ProcessShot();
+        ProcessPause();
+        }
     }
 
 
