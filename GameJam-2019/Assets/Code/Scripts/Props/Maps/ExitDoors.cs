@@ -13,7 +13,7 @@ public class ExitDoors : MonoBehaviour
 
     public SpriteRenderer render;
     private void Start() {
-    
+
     }
 
 
@@ -27,7 +27,7 @@ public class ExitDoors : MonoBehaviour
 
             render.sprite = sprites[1];
 
-            if (players.Count > 2)
+            if (players.Count == 2)
             {
                 render.sprite = sprites[2];
                 GameManager.Instance.LoadMap(mapToLoad);

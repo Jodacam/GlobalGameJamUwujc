@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 9004031199596938370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.87, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   render: {fileID: 6569519726336652817}
   stickSound:
     name: 
-    fmodFile: 
+    fmodFile: event:/SiliconeGun/Impact
     parameters: []
   bulletSprite: {fileID: 21300000, guid: 102b11806602db34495e58635c5ba26c, type: 3}
   stickSprite: {fileID: 21300000, guid: 918f97a753751b44c9ba0939668922e1, type: 3}
@@ -171,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.6365466, y: -0.1577543}
+  m_Offset: {x: -0.6365466, y: -0.094637275}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.599345, y: 0.49985945}
+  m_Size: {x: 4.599345, y: 0.6260935}
   m_EdgeRadius: 0
 --- !u!251 &2363914921553718998
 PlatformEffector2D:
