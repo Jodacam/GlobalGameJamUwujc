@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Doozy.Engine.UI;
 
 //Manager del juego. Aquí podemos guardar los progresos que se van haciendo e ir compronaod con los objetos.
 public class GameManager : SerializedMonoBehaviour
@@ -10,6 +11,8 @@ public class GameManager : SerializedMonoBehaviour
 
     public bool pause = false;
 
+    public UIView pauseMenu;
+    public UIView load;
 
     public GameObject actualMap;
 
@@ -51,7 +54,8 @@ public class GameManager : SerializedMonoBehaviour
 
     public IEnumerator loadMap(string map)
     {
-        yield return null;
+        load.Show();
+        yield return new WaitForSeconds(0.5f);
         this.actualMap.SetActive(false);
 
         if (maps.ContainsKey(map))
@@ -81,7 +85,7 @@ public class GameManager : SerializedMonoBehaviour
             player.transform.position = spawn.transform.position;
             player.gameObject.SetActive(true);
         }
-
+    load.Hide();
 
     }
 
