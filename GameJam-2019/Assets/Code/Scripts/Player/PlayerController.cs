@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void Update()
+    protected virtual void Update()
     {
         ProcessInput();
         ProcessMovement();
