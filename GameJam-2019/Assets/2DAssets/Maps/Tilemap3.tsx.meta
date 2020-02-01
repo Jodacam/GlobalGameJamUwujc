@@ -9,17 +9,15 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
   missingFiles: []
-  errors:
-  - Texture was imported at a smaller size. Make sure 'Max Size' on '../Tilesheets/tilemapentero3.png'
-    is at least '3840'
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 10
-  pixelsPerUnit: 100
+  pixelsPerUnit: 64
   edgesPerEllipse: 32
-  numberOfObjectsImported: 2
-  useSpriteAtlas: 1
+  numberOfObjectsImported: 78
+  useSpriteAtlas: 0
   atlasWidth: 2048
   atlasHeight: 2048

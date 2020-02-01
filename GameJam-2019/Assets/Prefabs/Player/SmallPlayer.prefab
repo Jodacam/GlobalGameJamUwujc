@@ -295,7 +295,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 685442494349058068, guid: 63867325b9fb6b84888cef699fbf7743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -436,7 +436,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3960114935539276397, guid: 63867325b9fb6b84888cef699fbf7743,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -518,7 +518,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8951011559240194657, guid: 63867325b9fb6b84888cef699fbf7743,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -638,7 +638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7433528848885685267, guid: 63867325b9fb6b84888cef699fbf7743,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -720,7 +720,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 414933155168263348, guid: 63867325b9fb6b84888cef699fbf7743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -883,7 +883,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7751085063796642825, guid: 63867325b9fb6b84888cef699fbf7743,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -973,15 +973,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1954735066391934700, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
         type: 3}
