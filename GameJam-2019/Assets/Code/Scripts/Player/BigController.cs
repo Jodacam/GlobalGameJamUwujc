@@ -19,7 +19,7 @@ public class BigController : PlayerController
     }
 
     // Update is called once per frame
-    protected override void Update()
+    public override void Update()
     {
         base.Update();
         if(actionButton.down)
