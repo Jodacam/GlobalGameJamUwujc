@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{35054494-b2b8-4916-80a8-8231a5755cf4}">
+        <property name="assetPath">
+            <value>AMB_Sala_Megafonia.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>35.213583333333332</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{d6a76e18-bc58-4c11-80e3-56c428795893}</destination>
+        </relationship>
+    </object>
+</objects>
