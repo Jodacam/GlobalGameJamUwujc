@@ -15,6 +15,7 @@ public class BigController : PlayerController
     // Start is called before the first frame update
     void Start()
     {
+        InitComponents();
         isGrabbing = false;
     }
 
@@ -22,6 +23,7 @@ public class BigController : PlayerController
     public override void Update()
     {
         base.Update();
+        UpdateHolderObjectPosition();
         if(actionButton.down)
         {
             if(isGrabbing)
@@ -37,8 +39,7 @@ public class BigController : PlayerController
 
     private void Grab()
     {
-        //CAMBIAR CONDICION PARA COMPROBAR QUE ES UN OBJETO QUE SE PUEDE AGARRAR
-        if(true)
+        if(itemInFocus != null)
         {
             isGrabbing = true;
             itemInFocus.transform.SetParent(holderObject.transform);
@@ -49,7 +50,20 @@ public class BigController : PlayerController
     private void Throw()
     {
         itemInFocus.transform.SetParent(null);
-        itemInFocus.GetComponent<Rigidbody2D>().AddForce(throwForce, ForceMode2D.Impulse);
+        itemInFocus.GetComponent<Rigidbody2D>().AddForce(new Vector2(throwForce.x * direction, throwForce.y), ForceMode2D.Impulse);
         isGrabbing = false;
+        itemInFocus = null;
+    }
+
+    private void UpdateHolderObjectPosition()
+    {
+        holderObject.transform.localPosition = new Vector2(Mathf.Abs(holderObject.transform.localPosition.x) * direction, holderObject.transform.localPosition.y);
+        if (isGrabbing)
+            itemInFocus.transform.localPosition = Vector2.zero;
+    }
+
+    public void SetItemInFocus(GameObject focusObject)
+    {
+        itemInFocus = focusObject;
     }
 }
