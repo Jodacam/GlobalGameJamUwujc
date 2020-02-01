@@ -5,7 +5,7 @@
             <value>Sala control</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{659de218-eb7d-46bc-9041-8a2d198d1a77}</destination>
@@ -56,7 +56,11 @@
             <destination>{40a474a1-81d3-4d05-ac7c-81c9e64fde3d}</destination>
         </relationship>
     </object>
-    <object class="EventAutomatableProperties" id="{c0792917-9608-4827-bec9-e976bd838e11}"/>
+    <object class="EventAutomatableProperties" id="{c0792917-9608-4827-bec9-e976bd838e11}">
+        <property name="maxVoices">
+            <value>1</value>
+        </property>
+    </object>
     <object class="MarkerTrack" id="{f289dc81-1508-467c-9c2c-d5dc945ed492}"/>
     <object class="GroupTrack" id="{89f8196e-4ee4-4a51-9913-b45d2adb0284}">
         <relationship name="modules">
@@ -116,10 +120,16 @@
     <object class="MixerBusEffectChain" id="{d76ce708-f6cb-4d7f-a89e-ece2409b78c1}">
         <relationship name="effects">
             <destination>{9b1132ef-1cab-4560-a11e-f781bcb1691f}</destination>
-            <destination>{4a45e605-c87b-4373-ae92-158292e2f125}</destination>
         </relationship>
     </object>
-    <object class="MixerBusPanner" id="{952741f1-1973-4207-91f2-d083b0dec5d1}"/>
+    <object class="MixerBusPanner" id="{952741f1-1973-4207-91f2-d083b0dec5d1}">
+        <property name="overridingOutputFormat">
+            <value>1</value>
+        </property>
+        <property name="outputFormatOverridden">
+            <value>true</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{bcb70d08-5803-4856-ac3b-5f55ce905d15}"/>
     <object class="MixerBusEffectChain" id="{a721c150-827a-4b3d-8013-665ab5bcd5f2}">
         <relationship name="effects">
@@ -128,6 +138,5 @@
     </object>
     <object class="MixerBusPanner" id="{6941bf2e-d612-4058-9bed-365b6f3a082d}"/>
     <object class="MixerBusFader" id="{9b1132ef-1cab-4560-a11e-f781bcb1691f}"/>
-    <object class="SpatialiserEffect" id="{4a45e605-c87b-4373-ae92-158292e2f125}"/>
     <object class="MixerBusFader" id="{0ebe3a7b-31eb-4d73-9b49-e8c6227af790}"/>
 </objects>
