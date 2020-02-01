@@ -52,6 +52,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public InputState pointButton;
 
+    [SerializeField]
+    public InputState startButton;
+
 
 
     public string ActionButton;
@@ -138,11 +141,15 @@ public class PlayerController : MonoBehaviour
 
                 changeController = true;
             }
+
+            ProcessPause();
         }
     }
 
     public void ProcessPause(){
-
+        if(startButton.down){
+            GameManager.Instance.Pause();
+        }
     }
 
     protected void DoJump()
@@ -180,6 +187,8 @@ public class PlayerController : MonoBehaviour
         actionButton.Process();
         jumpButton.Process();
         changeButton.Process();
+        startButton.Process();
+        pointButton.Process();
     }
 
 
@@ -238,6 +247,7 @@ public class PlayerController : MonoBehaviour
             jumpButton = new InputState("Jump");
             changeButton = new InputState("change");
             pointButton = new InputState("pointer");
+            startButton = new InputState("start");
             axis = new AxisInputs()
             {
                 vertical = "Vertical",
@@ -250,6 +260,7 @@ public class PlayerController : MonoBehaviour
             jumpButton = new InputState("Jump_1");
             changeButton = new InputState("change_1");
             pointButton = new InputState("pointer_1");
+            startButton = new InputState("start_1");
             axis = new AxisInputs()
             {
                 vertical = "Vertical_1",

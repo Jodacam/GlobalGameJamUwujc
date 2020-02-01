@@ -26,7 +26,7 @@ public class SmallController : PlayerController
 
     public Sound shootSound;
 
-    
+    public bool isGrabbed;
 
     public int maxBullets = 5;
 
@@ -50,11 +50,14 @@ public class SmallController : PlayerController
                 this.bulletPool[i].gameObject.SetActive(false);
             }
         }
+
+        isGrabbed = false;
     }
 
     // Update is called once per frame
     new void Update()
     {
+        if(!GameManager.Instance.pause){
         ProcessInput();
         ProcessMovement();
         if (isGround)
@@ -70,6 +73,8 @@ public class SmallController : PlayerController
             changeController = true;
         }
         ProcessShot();
+        ProcessPause();
+        }
     }
 
 
@@ -126,7 +131,7 @@ public class SmallController : PlayerController
         }
         else
         {
-            if (actionButton.down)
+            if (actionButton.down && !isGrabbed)
             {
                 var bulletInstance = this.bulletPool[actualPool];
 
