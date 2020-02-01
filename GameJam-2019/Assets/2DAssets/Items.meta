@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameJam-2019/Assets/2DAssets/Items.meta
 guid: 9b7092b426bca5946ab435d6223debb1
+=======
+guid: 51b1d82915607394591cc30d176744bd
+>>>>>>> ec6ffff5ff797032d659fede9c5905d4ca2216c2:GameJam-2019/Assets/2DAssets/Tilesheets.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

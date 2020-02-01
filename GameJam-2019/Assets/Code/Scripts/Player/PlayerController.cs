@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour
         {
             useDepth = true,
             useLayerMask = true,
-            layerMask = LayerMask.GetMask("Scene"),
+            layerMask = LayerMask.GetMask(new string[]{"Scene","Block"}),
 
         }, results);
 

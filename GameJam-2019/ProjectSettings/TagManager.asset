@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Holder
   - Lever
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Player
   - Scene
   - Bullet
-  - 
-  - 
+  - BigPlayer
+  - Block
   - 
   - 
   - 

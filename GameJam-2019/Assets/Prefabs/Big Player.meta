@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameJam-2019/Assets/Prefabs/Big Player.meta
 guid: e231b415d85b2d44488d00654265a852
+=======
+guid: 6d5f474ab7c0ead449fddecc661a912e
+>>>>>>> ec6ffff5ff797032d659fede9c5905d4ca2216c2:GameJam-2019/Assets/2DAssets/Downloads/abstract-platformer-370-assets/Tilesheet.meta~HEAD
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
