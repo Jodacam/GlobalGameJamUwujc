@@ -19,7 +19,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 4529536
-  Exists: 1
+  Exists: 0
 --- !u!114 &-9087173361617540311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637161743689263112
+  lastModified: 637161706821851146
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -55,7 +55,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7978882573937023912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
   Path: event:/Ambientes/Sala motores
   guid: f0e18c55a6abaa46963376143e75f2a4
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -115,7 +115,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6565994157598300747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   Path: event:/Ambientes/Tutorial
   guid: cb8dec2d98b23440bd62474985dd4733
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -139,6 +139,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 104604
+--- !u!114 &-5173022854926598648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lever/On-Off
+  m_EditorClassIdentifier: 
+  Name: On-Off
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-4878043248211342761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +171,7 @@ MonoBehaviour:
   Path: event:/Ambientes/Base
   guid: bac2431699f2f644973a167088f796aa
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -177,15 +194,35 @@ MonoBehaviour:
   Path: event:/SFX/Actions/Lever
   guid: 347ffee8a748024aa5b8163076a495d4
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8244627330332866908}
+  - {fileID: -5173022854926598648}
   MinDistance: 1
   MaxDistance: 20
   Length: 394
+--- !u!114 &-4451740149423835768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\shadow\Documents\GitHub\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637161706821831166
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 4529536
+  Exists: 1
 --- !u!114 &-2981641905236497613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +238,7 @@ MonoBehaviour:
   Path: event:/SFX/Characters/JumFall Small
   guid: f6ad424876bcf34c978331d7a3e30e3d
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -224,12 +261,12 @@ MonoBehaviour:
   Path: event:/Ambientes/Sala calderas
   guid: 30fc2ad3b4ac8548b70f6b31a8f31d2a
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 2329798318974107216}
+  - {fileID: 3028902441033521919}
   MinDistance: 1
   MaxDistance: 20
   Length: 82709
@@ -267,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -9087173361617540311}
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   EditorEvents:
   - {fileID: 1189076256406911711}
   - {fileID: 616527059804377881}
@@ -287,10 +324,10 @@ MonoBehaviour:
   - {fileID: -2981641905236497613}
   - {fileID: 3590847525991265694}
   MasterBanks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637161743689263112
+  stringsBankWriteTime: 637161706821851146
   cacheVersion: 3
 --- !u!114 &616527059804377881
 MonoBehaviour:
@@ -307,7 +344,7 @@ MonoBehaviour:
   Path: event:/Ambientes/Sala vigilancia
   guid: 0864ca3f698953478ca2a4d15fc37c6a
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -330,7 +367,7 @@ MonoBehaviour:
   Path: event:/Folder/New Event
   guid: d627d8a3d89b3244b5cadbb239a770f8
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -353,7 +390,7 @@ MonoBehaviour:
   Path: event:/SFX/Characters/Step Big
   guid: 25a0b8a3c7604e40a1892da74a2348a3
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -376,7 +413,7 @@ MonoBehaviour:
   Path: event:/SiliconeGun/Impact
   guid: aa7952d7b7c3894a93b6742f2da7a468
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -420,7 +457,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2473355714258313689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,12 +473,12 @@ MonoBehaviour:
   Path: event:/Ambientes/Sala megafonia
   guid: 65ba0d2e2ca3e8429ac3889f770aff75
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7215412256251593666}
+  - {fileID: 6639381060912114939}
   MinDistance: 1
   MaxDistance: 20
   Length: 108388
@@ -460,7 +497,7 @@ MonoBehaviour:
   Path: event:/SFX/Actions/Box Fall Impact
   guid: b6e5a79a81c6b6458a8ebe893fd9219a
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -488,6 +525,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13378
   Exists: 0
+--- !u!114 &3028902441033521919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala calderas/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &3040619506304491133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +557,7 @@ MonoBehaviour:
   Path: event:/SFX/Characters/Step Small
   guid: 6c97d030cc489242a334d205a4eb6176
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -526,7 +580,7 @@ MonoBehaviour:
   Path: event:/Ambientes/Sala control
   guid: da5fd4abd7bac145ae4bb180b9d176b5
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -549,7 +603,7 @@ MonoBehaviour:
   Path: event:/MSC/Intro
   guid: f7d8f8683f92004d81a39e02b1e80c4e
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -572,7 +626,7 @@ MonoBehaviour:
   Path: event:/SFX/Actions/Box Drag
   guid: cfd3edd31cda344eb83be6b4f3b11325
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -595,7 +649,7 @@ MonoBehaviour:
   Path: event:/SFX/Characters/JumpFall Big
   guid: 62146ca1d6e5394287647da1b5441feb
   Banks:
-  - {fileID: -9157248952589464910}
+  - {fileID: -4451740149423835768}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -623,6 +677,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13378
   Exists: 0
+--- !u!114 &6639381060912114939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala megafonia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &8111878746364653173
 MonoBehaviour:
   m_ObjectHideFlags: 0

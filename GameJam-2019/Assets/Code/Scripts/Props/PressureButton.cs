@@ -27,7 +27,7 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponent<BigController>())
+        if(collision.GetComponent<BigController>() || collision.CompareTag("Block"))
         {
             active = true;
             positiveTrigger.Invoke();
@@ -36,7 +36,7 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<BigController>())
+        if (collision.GetComponent<BigController>() || collision.CompareTag("Block"))
         {
             active = true;
         }
@@ -44,7 +44,7 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<BigController>())
+        if (collision.GetComponent<BigController>() || collision.CompareTag("Block"))
         {
             active = false;
             negativeTrigger.Invoke();
