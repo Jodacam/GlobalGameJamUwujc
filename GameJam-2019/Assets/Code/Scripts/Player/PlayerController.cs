@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public InputState changeButton;
 
-    [HideInInspector]
+    [SerializeField]
     public InputState pointButton;
 
     
@@ -73,6 +73,8 @@ public class PlayerController : MonoBehaviour
 
 
     public CircleCollider2D footColission;
+
+    private bool changeController = true;
 
     public void Start()
     {
@@ -119,9 +121,11 @@ public class PlayerController : MonoBehaviour
             DoJump();
         }
         CheckGround();
-        if (changeButton.down)
+        if (changeButton.down && changeController)
         {
-            ChangeInputs();
+            ChangePlayers();
+        }else{
+            changeController = true;
         }
     }
 
@@ -189,7 +193,9 @@ public class PlayerController : MonoBehaviour
 
     public void ChangePlayers()
     {
-        this.otherPlayer.ChangeInputs();
+        this.otherPlayer.playerNumber = this.otherPlayer.playerNumber  == 1 ? 0 : 1;
+        this.otherPlayer.setButtons();
+
         this.ChangeInputs();
     }
 
@@ -203,13 +209,13 @@ public class PlayerController : MonoBehaviour
 
 
     protected void setButtons()
-    {
+    {   this.changeController = false;
         if (playerNumber == 0)
         {
             actionButton = new InputState("action");
             jumpButton = new InputState("Jump");
             changeButton = new InputState("change");
-            pointButton = new InputState("hold");
+            pointButton = new InputState("pointer");
             axis = new AxisInputs()
             {
                 vertical = "Vertical",
@@ -221,7 +227,7 @@ public class PlayerController : MonoBehaviour
             actionButton = new InputState("action_1");
             jumpButton = new InputState("Jump_1");
             changeButton = new InputState("change_1");
-            pointButton = new InputState("hold_1");
+            pointButton = new InputState("pointer_1");
             axis = new AxisInputs()
             {
                 vertical = "Vertical_1",
