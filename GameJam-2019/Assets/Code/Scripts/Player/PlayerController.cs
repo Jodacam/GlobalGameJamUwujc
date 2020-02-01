@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public InputState jumpButton;
 
+    [HideInInspector]
+    public InputState changeButton;
+
+    
+
     public string ActionButton;
     public Animator anim;
 
@@ -53,7 +58,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public float jumpForce = 10;
 
-    private Vector2 innerVelocity;
+    protected Vector2 innerVelocity;
 
     public bool isGround = true;
 
@@ -61,10 +66,12 @@ public class PlayerController : MonoBehaviour
     public AxisInputs axis;
     public int playerNumber = 0;
 
+    public PlayerController otherPlayer;
+
 
     public CircleCollider2D footColission;
 
-    void Start()
+    public void Start()
     {
         InitComponents();
     }
@@ -74,28 +81,8 @@ public class PlayerController : MonoBehaviour
     {
 
 
-        if (playerNumber == 0)
-        {
-            actionButton = new InputState("action");
-            jumpButton = new InputState("Jump");
 
-            axis = new AxisInputs()
-            {
-                vertical = "Vertical",
-                horizontal = "Horizontal"
-            };
-        }
-        else
-        {
-            actionButton = new InputState("action_1");
-            jumpButton = new InputState("Jump_1");
-            axis = new AxisInputs()
-            {
-                vertical = "Vertical_1",
-                horizontal = "Horizontal_1"
-            };
-        }
-
+        setButtons();
 
         if (anim == null)
         {
@@ -112,10 +99,15 @@ public class PlayerController : MonoBehaviour
         {
             footColission = GetComponentInChildren<CircleCollider2D>();
         }
+
+        if (otherPlayer == null)
+        {
+            this.otherPlayer = FindObjectOfType<PlayerController>();
+        }
     }
 
 
-    protected virtual void Update()
+    public virtual void Update()
     {
         ProcessInput();
         ProcessMovement();
@@ -124,12 +116,15 @@ public class PlayerController : MonoBehaviour
             DoJump();
         }
         CheckGround();
-
+        if (changeButton.down)
+        {
+            ChangeInputs();
+        }
     }
 
-    private void DoJump()
+    protected void DoJump()
     {
-        if (canJump && jumpButton.press)
+        if (canJump && jumpButton.down)
         {
             float force = jumpForce;
 
@@ -139,7 +134,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void ProcessMovement()
+    protected void ProcessMovement()
     {
         float xmove = xInput * horizontalSpeed * Time.deltaTime;
         transform.Translate(new Vector3(xmove, 0, 0));
@@ -150,16 +145,17 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void ProcessInput()
+    protected void ProcessInput()
     {
         yInput = Input.GetAxis(axis.vertical);
         xInput = Input.GetAxis(axis.horizontal);
         actionButton.Process();
         jumpButton.Process();
+        changeButton.Process();
     }
 
 
-    private void CheckGround()
+    protected void CheckGround()
     {
 
         Collider2D[] results = new Collider2D[1];
@@ -168,7 +164,7 @@ public class PlayerController : MonoBehaviour
             useDepth = true,
             useLayerMask = true,
             layerMask = LayerMask.GetMask("Scene"),
-            
+
         }, results);
 
 
@@ -186,4 +182,47 @@ public class PlayerController : MonoBehaviour
             this.anim.SetBool(ANIM_GROUND, isGround);
         }
     }
+
+
+    public void ChangePlayers()
+    {
+        this.otherPlayer.ChangeInputs();
+        this.ChangeInputs();
+    }
+
+    public void ChangeInputs()
+    {
+        this.playerNumber = this.playerNumber == 1 ? 0 : 1;
+
+        setButtons();
+
+    }
+
+
+    protected void setButtons()
+    {
+        if (playerNumber == 0)
+        {
+            actionButton = new InputState("action");
+            jumpButton = new InputState("Jump");
+            changeButton = new InputState("change");
+            axis = new AxisInputs()
+            {
+                vertical = "Vertical",
+                horizontal = "Horizontal"
+            };
+        }
+        else
+        {
+            actionButton = new InputState("action_1");
+            jumpButton = new InputState("Jump_1");
+            changeButton = new InputState("change_1");
+            axis = new AxisInputs()
+            {
+                vertical = "Vertical_1",
+                horizontal = "Horizontal_1"
+            };
+        }
+    }
 }
+
