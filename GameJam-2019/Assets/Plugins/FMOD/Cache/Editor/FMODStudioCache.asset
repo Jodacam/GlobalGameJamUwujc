@@ -33,11 +33,11 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637161985469700503
+  lastModified: 637162009983351085
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1540
+    Value: 1672
   Exists: 1
 --- !u!114 &-8244627330332866908
 MonoBehaviour:
@@ -73,11 +73,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &-7964690712517245269
 MonoBehaviour:
@@ -133,6 +133,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7036291482368145944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala calderas/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-6565994157598300747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,11 +167,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 104604
 --- !u!114 &-6236801622900162644
 MonoBehaviour:
@@ -224,11 +241,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 65284
 --- !u!114 &-4830760950286060255
 MonoBehaviour:
@@ -247,12 +264,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 5084798327072378973}
-  MinDistance: 1
-  MaxDistance: 20
+  - {fileID: 796374301607326261}
+  MinDistance: 0
+  MaxDistance: 0
   Length: 394
 --- !u!114 &-4451740149423835768
 MonoBehaviour:
@@ -328,11 +345,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 704
 --- !u!114 &-2809839893973409314
 MonoBehaviour:
@@ -371,12 +388,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1994766726332395612}
-  MinDistance: 1
-  MaxDistance: 20
+  - {fileID: -7036291482368145944}
+  MinDistance: 0
+  MaxDistance: 0
   Length: 82709
 --- !u!114 &-1412750225985053945
 MonoBehaviour:
@@ -451,7 +468,6 @@ MonoBehaviour:
   - {fileID: -9087173361617540311}
   - {fileID: 3108846860701475569}
   EditorEvents:
-  - {fileID: 1189076256406911711}
   - {fileID: 616527059804377881}
   - {fileID: 1849521746726195968}
   - {fileID: -1797214216316331919}
@@ -468,12 +484,39 @@ MonoBehaviour:
   - {fileID: -7978882573937023912}
   - {fileID: -2981641905236497613}
   - {fileID: 3590847525991265694}
+  - {fileID: 394137659712383229}
+  - {fileID: 6484577743881748511}
+  - {fileID: 1363614466595451127}
+  - {fileID: 8551355404191675215}
   MasterBanks:
   - {fileID: 3108846860701475569}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637161985469700503
+  stringsBankWriteTime: 637162009983351085
   cacheVersion: 3
+--- !u!114 &394137659712383229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Stage/Door Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Stage/Door Close
+  guid: 3419430af955874aa9d6d5e776fe5827
+  Banks:
+  - {fileID: 3108846860701475569}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1180
 --- !u!114 &616527059804377881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,12 +534,29 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 23612
+--- !u!114 &796374301607326261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lever/On-Off
+  m_EditorClassIdentifier: 
+  Name: On-Off
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1189076256406911711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,8 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Folder/New Event
   guid: d627d8a3d89b3244b5cadbb239a770f8
-  Banks:
-  - {fileID: 3108846860701475569}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -520,6 +579,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1363614466595451127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SiliconeGun/Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/SiliconeGun/Shoot
+  guid: 7c5d9767bec6224087055ab5aa2f7c59
+  Banks:
+  - {fileID: 3108846860701475569}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 227
 --- !u!114 &1566386186048153769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,11 +636,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 308
 --- !u!114 &1867848792878939608
 MonoBehaviour:
@@ -577,11 +659,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 341
 --- !u!114 &1994766726332395612
 MonoBehaviour:
@@ -599,7 +681,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2206475591457667056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +719,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &2451485523915936883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala megafonia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2473355714258313689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,12 +753,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6618603809793924712}
-  MinDistance: 1
-  MaxDistance: 20
+  - {fileID: 2451485523915936883}
+  MinDistance: 0
+  MaxDistance: 0
   Length: 108388
 --- !u!114 &2889270069122820803
 MonoBehaviour:
@@ -678,11 +777,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 1741
 --- !u!114 &2947066529444343212
 MonoBehaviour:
@@ -738,11 +837,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 274
 --- !u!114 &3108846860701475569
 MonoBehaviour:
@@ -758,11 +857,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637161985469544241
+  lastModified: 637162009983351085
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4529536
+    Value: 4567552
   Exists: 1
 --- !u!114 &3179342269277877803
 MonoBehaviour:
@@ -801,11 +900,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 23612
 --- !u!114 &3590847525991265694
 MonoBehaviour:
@@ -824,11 +923,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 54355
 --- !u!114 &4247975759860505114
 MonoBehaviour:
@@ -881,11 +980,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 12221
 --- !u!114 &4799881196306601136
 MonoBehaviour:
@@ -921,11 +1020,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 3108846860701475569}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 738
 --- !u!114 &4937207294830362915
 MonoBehaviour:
@@ -963,7 +1062,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6192771702823166088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +1080,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &6484577743881748511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Stage/Door Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Stage/Door Open
+  guid: 791b83b108dbc34abac1427caedcd1d7
+  Banks:
+  - {fileID: 3108846860701475569}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1221
 --- !u!114 &6618603809793924712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,7 +1119,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6639381060912114939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,6 +1174,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13378
   Exists: 0
+--- !u!114 &8551355404191675215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Throw
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Throw
+  guid: f71a9d63ee25c245a0766a677728d961
+  Banks:
+  - {fileID: 3108846860701475569}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 306
 --- !u!114 &8633105159266926120
 MonoBehaviour:
   m_ObjectHideFlags: 0
