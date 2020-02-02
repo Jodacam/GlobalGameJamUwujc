@@ -51,6 +51,14 @@ public class BigController : PlayerController
         }
         else
         {
+            float xmove = xInput * horizontalSpeed * Time.deltaTime;
+
+            if (Mathf.Abs(xInput) > 0.01f)
+            {
+                direction = (int)Mathf.Sign(xInput);
+                this.transform.localScale = new Vector2(direction * Mathf.Abs(this.transform.localScale.x), this.transform.localScale.y);
+            }
+
             this.anim.SetFloat(ANIM_SPEED, 0);
             this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
         }

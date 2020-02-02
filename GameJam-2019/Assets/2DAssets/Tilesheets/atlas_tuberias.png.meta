@@ -1,7 +1,109 @@
 fileFormatVersion: 2
 guid: a69d5001da412944ca8f9e186c6bdcf4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9005896772684584777
+    second: atlas_tuberias_0
+  - first:
+      213: 6800126865717755473
+    second: atlas_tuberias_1
+  - first:
+      213: 7832300256716604950
+    second: atlas_tuberias_2
+  - first:
+      213: 399782158884839009
+    second: atlas_tuberias_3
+  - first:
+      213: -9085054953368400717
+    second: atlas_tuberias_4
+  - first:
+      213: -909526499420076607
+    second: atlas_tuberias_5
+  - first:
+      213: 7401391527536872810
+    second: atlas_tuberias_6
+  - first:
+      213: 5870672504624663231
+    second: atlas_tuberias_7
+  - first:
+      213: -5952108484967427701
+    second: atlas_tuberias_8
+  - first:
+      213: -2489275693177554254
+    second: atlas_tuberias_9
+  - first:
+      213: -533972686662115652
+    second: atlas_tuberias_10
+  - first:
+      213: -4002804576290171409
+    second: atlas_tuberias_11
+  - first:
+      213: -3086488048048758667
+    second: atlas_tuberias_12
+  - first:
+      213: 4928582417850648648
+    second: atlas_tuberias_13
+  - first:
+      213: -9190025050446139109
+    second: atlas_tuberias_14
+  - first:
+      213: 7653988681820132965
+    second: atlas_tuberias_15
+  - first:
+      213: -8834835910043370479
+    second: atlas_tuberias_16
+  - first:
+      213: -6738079229085120441
+    second: atlas_tuberias_17
+  - first:
+      213: -9093111151751341462
+    second: atlas_tuberias_0
+  - first:
+      213: -5429296269314215913
+    second: atlas_tuberias_1
+  - first:
+      213: 2424650262368150807
+    second: atlas_tuberias_2
+  - first:
+      213: 3608555517626654145
+    second: atlas_tuberias_3
+  - first:
+      213: 3877323543282301705
+    second: atlas_tuberias_4
+  - first:
+      213: -1382160115170007462
+    second: atlas_tuberias_5
+  - first:
+      213: -5644064929145979812
+    second: atlas_tuberias_6
+  - first:
+      213: -4558282479713684462
+    second: atlas_tuberias_7
+  - first:
+      213: -1092921470497828121
+    second: atlas_tuberias_8
+  - first:
+      213: 4913289755965402593
+    second: atlas_tuberias_9
+  - first:
+      213: 4924163649158766496
+    second: atlas_tuberias_10
+  - first:
+      213: -8694638663329623419
+    second: atlas_tuberias_11
+  - first:
+      213: -1074939267020417618
+    second: atlas_tuberias_12
+  - first:
+      213: 562039103006769850
+    second: atlas_tuberias_13
+  - first:
+      213: 2768639809501132404
+    second: atlas_tuberias_14
+  - first:
+      213: -3246565893918350022
+    second: atlas_tuberias_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +142,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +172,393 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: atlas_tuberias_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ad7b8b597cec180800000000000000
+      internalID: -9093111151751341462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 81
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7103c270fc347a4b0800000000000000
+      internalID: -5429296269314215913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 81
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715e209319616a120800000000000000
+      internalID: 2424650262368150807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 81
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd9964df1a241230800000000000000
+      internalID: 3608555517626654145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bb99c38350fc530800000000000000
+      internalID: 3877323543282301705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 80
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a562490c2b491dce0800000000000000
+      internalID: -1382160115170007462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 80
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c7309b9d04ca1b0800000000000000
+      internalID: -5644064929145979812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_7
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 80
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21477ca4c3abdb0c0800000000000000
+      internalID: -4558282479713684462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 81
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2549f86b925d0f0800000000000000
+      internalID: -1092921470497828121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed22e650038f2440800000000000000
+      internalID: 4913289755965402593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 4
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afdff3efb4265440800000000000000
+      internalID: 4924163649158766496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 4
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5825cdda330765780800000000000000
+      internalID: -8694638663329623419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 4
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea511229e6c0511f0800000000000000
+      internalID: -1074939267020417618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 4
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2099c1693ccc700800000000000000
+      internalID: 562039103006769850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476f154ec3f2c6620800000000000000
+      internalID: 2768639809501132404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas_tuberias_15
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 4
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3529114581e1f2d0800000000000000
+      internalID: -3246565893918350022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
