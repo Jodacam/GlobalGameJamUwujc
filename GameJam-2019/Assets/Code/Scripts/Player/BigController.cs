@@ -115,4 +115,16 @@ public class BigController : PlayerController
     {
         itemInFocus = focusObject;
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log("posicion caja " + collision.transform.position.y + " posicion gato " + transform.position.y);
+        if (collision.gameObject.CompareTag("Block") && Mathf.Abs(collision.transform.position.y - transform.position.y) <= 1)
+            anim.SetBool("push", true);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Block"))
+            anim.SetBool("push", false);
+    }
 }
