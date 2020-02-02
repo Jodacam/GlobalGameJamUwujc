@@ -60,23 +60,25 @@ public class SmallController : PlayerController
     // Update is called once per frame
     new void Update()
     {
-        if(!GameManager.Instance.pause){
-        ProcessInput();
-        ProcessMovement();
-        if (isGround)
+        if (!GameManager.Instance.pause)
         {
-            DoJump();
-        }
-        CheckGround();
-        if (changeButton.down && changeController)
-        {
-            ChangePlayers();
-        }
-        else{
-            changeController = true;
-        }
-        ProcessShot();
-        ProcessPause();
+            ProcessInput();
+            ProcessMovement();
+            if (isGround)
+            {
+                DoJump();
+            }
+            CheckGround();
+            if (changeButton.down && changeController)
+            {
+                ChangePlayers();
+            }
+            else
+            {
+                changeController = true;
+            }
+            ProcessShot();
+            ProcessPause();
         }
     }
 
@@ -84,27 +86,28 @@ public class SmallController : PlayerController
     protected new void ProcessMovement()
     {
 
-        if (Mathf.Abs(xInput) > 0.01f){
+        if (Mathf.Abs(xInput) > 0.01f)
+        {
             direction = (int)Mathf.Sign(xInput);
-            this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
+            this.transform.localScale = new Vector2(direction * Mathf.Abs(this.transform.localScale.x), this.transform.localScale.y);
         }
 
-  
-            this.anim.SetBool("hold", false);
-            float xmove = xInput * horizontalSpeed * Time.deltaTime;
-            transform.Translate(new Vector3(xmove, 0, 0));
 
-            this.anim.SetFloat(ANIM_SPEED, Math.Abs(xmove));
-            this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
+        this.anim.SetBool("hold", false);
+        float xmove = xInput * horizontalSpeed * Time.deltaTime;
+        transform.Translate(new Vector3(xmove, 0, 0));
 
-            if (xInput != 0)
-            {
-                this.shootDir = new Vector2(xInput, 0).normalized  ;
-            }
-            pointer.SetActive(false);
+        this.anim.SetFloat(ANIM_SPEED, Math.Abs(xmove));
+        this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
 
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,shootY);
-        
+        if (xInput != 0)
+        {
+            this.shootDir = new Vector2(xInput, 0).normalized;
+        }
+        pointer.SetActive(false);
+
+        pointer.transform.position = transform.position + new Vector3(this.shootDir.x, shootY);
+
 
 
 
@@ -125,24 +128,33 @@ public class SmallController : PlayerController
         {
             if (actionButton.down && !isGrabbed)
             {
-                var bulletInstance = this.bulletPool[actualPool];
-
-                if (bulletInstance.isActiveAndEnabled)
-                {
-                    bulletInstance.Reset();
-                }
-
-
-                bulletInstance.Init(pointer.transform.position, Quaternion.identity, this.shootDir);
-
                 this.anim.SetTrigger("action");
+                StartCoroutine(shoot());
 
-                actualPool = (actualPool + 1) % this.bulletPool.Length;
-                //Instantiate(bullet, shootPoint.position, Quaternion.identity);
-                shootDelay = timeBetweenShoots;
-                
-                this.shootSound.Play(transform,body);
             }
         }
+    }
+
+    private IEnumerator shoot()
+    {
+
+        yield return new WaitForSeconds(0.25f);
+        var bulletInstance = this.bulletPool[actualPool];
+
+        if (bulletInstance.isActiveAndEnabled)
+        {
+            bulletInstance.Reset();
+        }
+
+
+        bulletInstance.Init(pointer.transform.position, Quaternion.identity, this.shootDir);
+
+
+
+        actualPool = (actualPool + 1) % this.bulletPool.Length;
+        //Instantiate(bullet, shootPoint.position, Quaternion.identity);
+        shootDelay = timeBetweenShoots;
+
+        this.shootSound.Play(transform, body);
     }
 }

@@ -14,6 +14,8 @@ public class BigController : PlayerController
 
     [SerializeField] private Sound throwSound;
 
+    private Coroutine throwRutine = null;
+
     private bool isGrabbing;
 
     // Start is called before the first frame update
@@ -34,13 +36,24 @@ public class BigController : PlayerController
             {
                 this.anim.SetTrigger("action");
                 this.throwSound.Play(transform);
-                Throw();
+
+                if(this.throwRutine == null)
+                    this.throwRutine = StartCoroutine(delay());
+                
             }
             else
             {
-                Grab();
+                if(isGround)
+                    Grab();
             }
         }
+    }
+
+
+    private IEnumerator delay(){
+        yield return new WaitForSeconds(0.5f);
+        Throw();
+        this.throwRutine = null;
     }
 
     protected override void ProcessMovement()
@@ -74,7 +87,7 @@ public class BigController : PlayerController
             itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 0;
             if (itemInFocus.CompareTag("Player"))
                 itemInFocus.GetComponent<SmallController>().isGrabbed = true;
-            this.anim.SetTrigger("action");
+            this.anim.SetTrigger("grab");
             this.grabSound.Play(transform);
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
@@ -101,5 +114,17 @@ public class BigController : PlayerController
     public void SetItemInFocus(GameObject focusObject)
     {
         itemInFocus = focusObject;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log("posicion caja " + collision.transform.position.y + " posicion gato " + transform.position.y);
+        if (collision.gameObject.CompareTag("Block") && Mathf.Abs(collision.transform.position.y - transform.position.y) <= 1)
+            anim.SetBool("push", true);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Block"))
+            anim.SetBool("push", false);
     }
 }
