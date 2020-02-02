@@ -28,9 +28,9 @@ public class BigController : PlayerController
     {
         base.Update();
         UpdateHolderObjectPosition();
-        if(actionButton.down)
+        if (actionButton.down)
         {
-            if(isGrabbing)
+            if (isGrabbing)
             {
                 this.anim.SetTrigger("action");
                 this.throwSound.Play(transform);
@@ -43,9 +43,22 @@ public class BigController : PlayerController
         }
     }
 
+    protected override void ProcessMovement()
+    {
+        if (!isGrabbing)
+        {
+            base.ProcessMovement();
+        }
+        else
+        {
+            this.anim.SetFloat(ANIM_SPEED, 0);
+            this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
+        }
+    }
+
     private void Grab()
     {
-        if(itemInFocus != null)
+        if (itemInFocus != null)
         {
             isGrabbing = true;
             itemInFocus.transform.SetParent(holderObject.transform);
@@ -55,6 +68,7 @@ public class BigController : PlayerController
                 itemInFocus.GetComponent<SmallController>().isGrabbed = true;
             this.anim.SetTrigger("action");
             this.grabSound.Play(transform);
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 
