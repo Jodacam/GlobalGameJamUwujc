@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9180476870664634176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Slider
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Slider
+  guid: 6834764f476c6a44bcc8f4760fcf066b
+  Banks:
+  - {fileID: 8717708574395176931}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-9157248952589464910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,11 +56,11 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637162026021027799
+  lastModified: 637162041124997873
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2080
+    Value: 2160
   Exists: 1
 --- !u!114 &-8879900986576104326
 MonoBehaviour:
@@ -55,7 +78,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8667024749740485085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +96,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8552477387843350416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala megafonia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8244627330332866908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +130,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8240200110628263386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Actions/Button On
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Actions/Button On
+  guid: 278b1baf01108a46b3cb178291bbc769
+  Banks:
+  - {fileID: 8717708574395176931}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 71
 --- !u!114 &-7978882573937023912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +377,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4878043248211342761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +421,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -4961053466956961745}
+  - {fileID: -2632456029578730652}
   MinDistance: 0
   MaxDistance: 0
   Length: 394
@@ -562,6 +625,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4529536
   Exists: 0
+--- !u!114 &-2632456029578730652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lever/On-Off
+  m_EditorClassIdentifier: 
+  Name: On-Off
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1798135749157232379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +685,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8879900986576104326}
+  - {fileID: 6575667136293104112}
   MinDistance: 0
   MaxDistance: 0
   Length: 82709
@@ -713,6 +793,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4529536
   Exists: 0
+--- !u!114 &-133056452308634999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Actions/Button Off
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Actions/Button Off
+  guid: ba3c74d003d5034ba62c414f170fbfbd
+  Banks:
+  - {fileID: 8717708574395176931}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 31
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,7 +832,6 @@ MonoBehaviour:
   - {fileID: -9087173361617540311}
   - {fileID: 8717708574395176931}
   EditorEvents:
-  - {fileID: 616527059804377881}
   - {fileID: 1849521746726195968}
   - {fileID: -1797214216316331919}
   - {fileID: -4830760950286060255}
@@ -758,11 +860,14 @@ MonoBehaviour:
   - {fileID: -3265454463991670457}
   - {fileID: -1798135749157232379}
   - {fileID: 7394011300270043671}
+  - {fileID: -8240200110628263386}
+  - {fileID: -9180476870664634176}
+  - {fileID: -133056452308634999}
   MasterBanks:
   - {fileID: 8717708574395176931}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637162026021027799
+  stringsBankWriteTime: 637162041124997873
   cacheVersion: 3
 --- !u!114 &30686117696454595
 MonoBehaviour:
@@ -795,8 +900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Actions/Button Press
   guid: 278b1baf01108a46b3cb178291bbc769
-  Banks:
-  - {fileID: 8717708574395176931}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1027,7 +1131,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6991266848156585650}
+  - {fileID: -8552477387843350416}
   MinDistance: 0
   MaxDistance: 0
   Length: 108388
@@ -1216,7 +1320,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 54355
+  Length: 15000
 --- !u!114 &3612436711050797654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,6 +1598,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &6575667136293104112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala calderas/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6639381060912114939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,7 +1671,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7269705495008638721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,11 +1767,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637162026020847944
+  lastModified: 637162041124997873
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4580416
+    Value: 4593184
   Exists: 1
 --- !u!114 &8939537399173444659
 MonoBehaviour:

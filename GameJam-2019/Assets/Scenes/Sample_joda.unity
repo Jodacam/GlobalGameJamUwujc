@@ -349,11 +349,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38765362}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.55, y: -0.26, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 168.8817, y: -87.32824, z: 0}
+  m_LocalScale: {x: 6.9785824, y: 6.193492, z: 6.193492}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &86211444
@@ -839,11 +839,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186202105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.81, y: 0.93, z: 0}
-  m_LocalScale: {x: 0.24524498, y: 0.24524498, z: 0.24524498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 85.537476, y: -76.7993, z: 0}
+  m_LocalScale: {x: 2.444946, y: 2.16989, z: 2.16989}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &352602627
@@ -992,11 +992,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414136316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.67, y: 3.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 219.92505, y: -57.864914, z: 0}
+  m_LocalScale: {x: 9.969403, y: 8.847846, z: 8.847846}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &428994205
@@ -1182,7 +1182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &450519014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12156863, g: 0.53333336, b: 0.7882353, a: 1}
+  m_Color: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1279,99 +1279,45 @@ MonoBehaviour:
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
-        Direction: 3
+        Direction: 2
         CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 1
-        Ease: 3
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0.008300781
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.16679944
-            value: 1.0379084
-            inSlope: 1.0000169
-            outSlope: 1.0000169
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.3440044
-            value: 0.6861694
-            inSlope: 0.9998679
-            outSlope: 0.9998679
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.6022441
-            value: 0.95902014
-            inSlope: 1.8180907
-            outSlope: 1.8180907
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.76606226
-            value: 0.97011644
-            inSlope: -0.26711467
-            outSlope: -0.26711467
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.22529584
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1.0083008
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 0.4
-      Rotate:
-        AnimationType: 2
-        Enabled: 0
-        From: {x: 0, y: 0, z: 0}
-        To: {x: 90, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 0
         EaseType: 0
-        Ease: 34
+        Ease: 17
         AnimationCurve:
           serializedVersion: 2
           m_Curve: []
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.1
-        Duration: 0.2
+        StartDelay: 0.2
+        Duration: 0.4
+      Rotate:
+        AnimationType: 2
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        RotateMode: 1
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
       Scale:
         AnimationType: 2
         Enabled: 1
         From: {x: 0, y: 0, z: 0}
-        To: {x: 0.7, y: 0.7, z: 1}
+        To: {x: 1.1, y: 1.1, z: 1}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
         Vibrato: 10
@@ -1379,86 +1325,14 @@ MonoBehaviour:
         NumberOfLoops: -1
         LoopType: 1
         EaseType: 0
-        Ease: 27
+        Ease: 23
         AnimationCurve:
           serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0.0011500716
-            value: 0
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.18183987
-            value: 0.9963956
-            inSlope: 1.0000169
-            outSlope: 1.0000169
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.30405074
-            value: 0.27968055
-            inSlope: -0.019073486
-            outSlope: -0.019073486
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.48154142
-            value: 0.7481303
-            inSlope: 0.9252131
-            outSlope: 0.9252131
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.5789693
-            value: 0.38414803
-            inSlope: 0.4518032
-            outSlope: 0.4518032
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.72302365
-            value: 0.6539519
-            inSlope: 1.6307831
-            outSlope: 1.6307831
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.80114186
-            value: 0.5411123
-            inSlope: 1.3419986
-            outSlope: 1.3419986
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1.0011501
-            value: 1
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
+          m_Curve: []
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.3
+        StartDelay: 0
         Duration: 0.4
       Fade:
         AnimationType: 2
@@ -1477,8 +1351,8 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 3
-        Duration: 0.4
+        StartDelay: 0.4
+        Duration: 0.2
     AutoStartLoopAnimation: 1
     LoadSelectedPresetAtRuntime: 0
     InstantAnimation: 0
@@ -1522,8 +1396,8 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Drop
-    PresetName: BounceAndDropNormal
+    PresetCategory: Basic
+    PresetName: BlastOff
   HideProgressor: {fileID: 0}
   LoopBehavior:
     Animation:
@@ -1670,6 +1544,29 @@ MonoBehaviour:
       AnimationType: 1
       Move:
         AnimationType: 1
+        Enabled: 0
+        From: {x: 0, y: 0, z: 0}
+        To: {x: 0, y: 0, z: 0}
+        By: {x: 0, y: 0, z: 0}
+        UseCustomFromAndTo: 0
+        Vibrato: 10
+        Elasticity: 1
+        NumberOfLoops: -1
+        LoopType: 1
+        Direction: 0
+        CustomPosition: {x: 0, y: 0, z: 0}
+        EaseType: 0
+        Ease: 1
+        AnimationCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        StartDelay: 0
+        Duration: 1
+      Rotate:
+        AnimationType: 1
         Enabled: 1
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 0}
@@ -1679,170 +1576,21 @@ MonoBehaviour:
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
-        Direction: 2
-        CustomPosition: {x: 0, y: 0, z: 0}
-        EaseType: 1
-        Ease: 31
+        RotateMode: 0
+        EaseType: 0
+        Ease: 26
         AnimationCurve:
           serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.27689174
-            value: 1.1039374
-            inSlope: 0.9998679
-            outSlope: 0.9998679
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.5209904
-            value: 0.6725324
-            inSlope: -2.103448
-            outSlope: -2.103448
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.7113236
-            value: 1.0435016
-            inSlope: -0.086426735
-            outSlope: -0.086426735
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.87152046
-            value: 0.7767258
-            inSlope: -3.053546
-            outSlope: -3.053546
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
+          m_Curve: []
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
         Duration: 0.5
-      Rotate:
-        AnimationType: 1
-        Enabled: 0
-        From: {x: 0, y: 0, z: 30}
-        To: {x: 0, y: 0, z: 0}
-        By: {x: 0, y: 0, z: 0}
-        UseCustomFromAndTo: 0
-        Vibrato: 10
-        Elasticity: 1
-        NumberOfLoops: -1
-        LoopType: 1
-        RotateMode: 0
-        EaseType: 1
-        Ease: 27
-        AnimationCurve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0.0051574707
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.048303347
-            value: 0.28854316
-            inSlope: 7.8732495
-            outSlope: 7.8732495
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.10184101
-            value: -0.07756907
-            inSlope: 3.7581615
-            outSlope: 3.7581615
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.1691427
-            value: 0.5604678
-            inSlope: 5.091666
-            outSlope: 5.091666
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.6416942
-            value: -0.5875959
-            inSlope: 1.8110614
-            outSlope: 1.8110614
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.9733818
-            value: 0.67883307
-            inSlope: -4.2502594
-            outSlope: -4.2502594
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 0.98996425
-            value: 0.88832426
-            inSlope: -2.3853254
-            outSlope: -2.3853254
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1.0051575
-            inSlope: 2
-            outSlope: 2
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        StartDelay: 0
-        Duration: 0.4
       Scale:
         AnimationType: 1
         Enabled: 1
-        From: {x: 0.7, y: 0.7, z: 1}
+        From: {x: 0.4, y: 0.4, z: 1}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
@@ -1851,42 +1599,42 @@ MonoBehaviour:
         NumberOfLoops: -1
         LoopType: 1
         EaseType: 0
-        Ease: 26
+        Ease: 25
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
           - serializedVersion: 3
             time: 0
             value: 0
-            inSlope: 2
-            outSlope: 2
+            inSlope: 1
+            outSlope: 1
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
             outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.22024798
-            value: 1.9692707
-            inSlope: 0.9352582
-            outSlope: 0.9352582
+            time: 0.4206471
+            value: 0.506504
+            inSlope: -0.28127939
+            outSlope: -0.28127939
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
             outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.65045136
-            value: 1.0910703
-            inSlope: 0.5003349
-            outSlope: 0.5003349
+            time: 0.641502
+            value: 0.6204572
+            inSlope: -0.85022783
+            outSlope: -0.85022783
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
             outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.7293131
-            value: 0.8114508
-            inSlope: 1.217737
-            outSlope: 1.217737
+            time: 0.9017855
+            value: 0.8473946
+            inSlope: -0.9030527
+            outSlope: -0.9030527
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
@@ -1894,8 +1642,8 @@ MonoBehaviour:
           - serializedVersion: 3
             time: 1
             value: 1
-            inSlope: -0.943337
-            outSlope: -0.943337
+            inSlope: 7.181079
+            outSlope: 7.181079
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
@@ -1907,7 +1655,7 @@ MonoBehaviour:
         Duration: 0.4
       Fade:
         AnimationType: 1
-        Enabled: 1
+        Enabled: 0
         From: 0
         To: 1
         By: 0.5
@@ -1923,7 +1671,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.5
+        Duration: 1
     AutoStartLoopAnimation: 1
     LoadSelectedPresetAtRuntime: 0
     InstantAnimation: 0
@@ -1967,8 +1715,8 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Drop
-    PresetName: DropAndBounceNormal
+    PresetCategory: Basic
+    PresetName: BlastOff
   ShowProgressor: {fileID: 0}
   TargetOrientation: 2
   UpdateHideProgressorOnShow: 0
@@ -2705,11 +2453,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815594298}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 1.8, z: 0}
-  m_LocalScale: {x: 0.30172998, y: 0.30172998, z: 0.30172998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.68919, y: -69.10167, z: 0}
+  m_LocalScale: {x: 3.0080678, y: 2.6696603, z: 2.6696603}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857411378
@@ -3519,11 +3267,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871445633}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.547211, y: 0.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.21853, y: -84.23149, z: 0}
+  m_LocalScale: {x: 9.969403, y: 8.847846, z: 8.847846}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &911963680
@@ -6943,11 +6691,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113068592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.61, z: 0}
-  m_LocalScale: {x: 0.24524498, y: 0.24524498, z: 0.24524498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 154.12697, y: -79.630615, z: 0}
+  m_LocalScale: {x: 2.444946, y: 2.16989, z: 2.16989}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1125893251
@@ -9709,11 +9457,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243884184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.56, y: 4.62, z: 0}
-  m_LocalScale: {x: 0.30172998, y: 0.30172998, z: 0.30172998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 218.82841, y: -44.15075, z: 0}
+  m_LocalScale: {x: 3.0080678, y: 2.6696603, z: 2.6696603}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343691497 stripped
@@ -9914,11 +9662,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355815612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 1.23, z: 0}
-  m_LocalScale: {x: 0.30172998, y: 0.30172998, z: 0.30172998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 168.58261, y: -74.14494, z: 0}
+  m_LocalScale: {x: 3.0080678, y: 2.6696603, z: 2.6696603}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366796413 stripped
@@ -10346,11 +10094,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484234705}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.93, y: 3.87, z: 0}
-  m_LocalScale: {x: 0.24524498, y: 0.24524498, z: 0.24524498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 202.57828, y: -50.786633, z: 0}
+  m_LocalScale: {x: 2.444946, y: 2.16989, z: 2.16989}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548554823
@@ -10498,11 +10246,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686626068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.11, y: 0.98, z: 0}
-  m_LocalScale: {x: 0.24524498, y: 0.24524498, z: 0.24524498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.638454, y: -76.3569, z: 0}
+  m_LocalScale: {x: 2.444946, y: 2.16989, z: 2.16989}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1366796416}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1726150235
@@ -11105,6 +10853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shootSound.fmodFile
       value: event:/SiliconeGun/Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673741855923537201, guid: f9399ffe048dcc1438634ddf5c207b2f,
+        type: 3}
+      propertyPath: shootY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9399ffe048dcc1438634ddf5c207b2f, type: 3}
