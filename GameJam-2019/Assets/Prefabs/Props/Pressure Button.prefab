@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 47dd5072f283d6d43a61fe2cd77ef42f, type: 3}
+  - {fileID: 21300000, guid: 5c7aeeebce14cad42ad368c60843e099, type: 3}
   pushButton:
     name: 
     fmodFile: event:/SFX/Actions/Button On
