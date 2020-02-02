@@ -40,14 +40,12 @@ public class GameManager : SerializedMonoBehaviour
     }
 
 
-    public void Pause()
-    {
+    public void Pause(){
         this.pause = true;
         this.pauseMenu.Show();
     }
 
-    public void UnPause()
-    {
+    public void UnPause(){
         this.pause = false;
         this.pauseMenu.Hide();
     }
@@ -69,6 +67,14 @@ public class GameManager : SerializedMonoBehaviour
     {
         load.Show();
         yield return new WaitForSeconds(1);
+
+        var bullets = FindObjectsOfType<SiliconeBullet>();
+
+        foreach (var bull in bullets)
+        {
+            bull.Reset();
+        }
+        
         this.actualMap.SetActive(false);
 
         if (maps.ContainsKey(map))
@@ -100,7 +106,7 @@ public class GameManager : SerializedMonoBehaviour
         }
 
         pause = false;
-        load.Hide();
+    load.Hide();
 
     }
 

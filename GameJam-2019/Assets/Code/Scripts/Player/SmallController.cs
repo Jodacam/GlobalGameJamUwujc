@@ -49,7 +49,7 @@ public class SmallController : PlayerController
         {
             for (int i = 0; i < this.maxBullets; i++)
             {
-                this.bulletPool[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity, this.poolContainer.transform);
+                this.bulletPool[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity);
                 this.bulletPool[i].gameObject.SetActive(false);
             }
         }

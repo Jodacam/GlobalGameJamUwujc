@@ -140,6 +140,8 @@ public class SiliconeBullet : MonoBehaviour
     {
         transform.SetParent(null);
         transform.SetPositionAndRotation(position, rotation);
+
+        transform.localScale = new Vector3(transform.localScale.x * shootDir.x,transform.localScale.y);
         gameObject.SetActive(true);
         this.actualDir = shootDir;
     }
