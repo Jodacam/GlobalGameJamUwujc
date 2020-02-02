@@ -87,9 +87,9 @@ public class SiliconeBullet : MonoBehaviour
         
         if (other.tag != "Player" && other.tag != "Holder" && other.tag != "Door")
         {
-            if (other.tag == "Bullet")
+            if (other.tag == "Bullet" || other.tag == "Block")
             {
-                this.gameObject.SetActive(false);
+                Reset();
             }
             else
             {
@@ -98,6 +98,7 @@ public class SiliconeBullet : MonoBehaviour
                 if (objectFixable != null && objectFixable.CanFix())
                 {
                     objectFixable.Fix();
+                    Reset();
                     this.gameObject.SetActive(false);
 
                 }
