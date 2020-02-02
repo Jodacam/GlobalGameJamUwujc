@@ -51,7 +51,7 @@ public class BigController : PlayerController
 
 
     private IEnumerator delay(){
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
         Throw();
         this.throwRutine = null;
     }
@@ -87,7 +87,7 @@ public class BigController : PlayerController
             itemInFocus.GetComponent<Rigidbody2D>().gravityScale = 0;
             if (itemInFocus.CompareTag("Player"))
                 itemInFocus.GetComponent<SmallController>().isGrabbed = true;
-            this.anim.SetTrigger("action");
+            this.anim.SetTrigger("grab");
             this.grabSound.Play(transform);
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
