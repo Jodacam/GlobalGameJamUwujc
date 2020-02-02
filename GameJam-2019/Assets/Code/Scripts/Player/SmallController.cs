@@ -140,7 +140,7 @@ public class SmallController : PlayerController
                 actualPool = (actualPool + 1) % this.bulletPool.Length;
                 //Instantiate(bullet, shootPoint.position, Quaternion.identity);
                 shootDelay = timeBetweenShoots;
-
+                
                 this.shootSound.Play(transform,body);
             }
         }

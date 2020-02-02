@@ -22,6 +22,8 @@ public class GameManager : SerializedMonoBehaviour
 
     public Dictionary<string, GameObject> maps;
 
+    public Sound loadSound;
+
 
     public static GameManager Instance
     {
@@ -54,6 +56,7 @@ public class GameManager : SerializedMonoBehaviour
     public void LoadMap(string map)
     {
         this.pause = true;
+        loadSound.Play(transform);
         foreach (var player in players)
         {
             player.gameObject.SetActive(false);
@@ -74,7 +77,7 @@ public class GameManager : SerializedMonoBehaviour
         {
             bull.Reset();
         }
-        
+
         this.actualMap.SetActive(false);
 
         if (maps.ContainsKey(map))
