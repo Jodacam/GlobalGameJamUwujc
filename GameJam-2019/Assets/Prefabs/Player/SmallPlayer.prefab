@@ -37,7 +37,6 @@ MonoBehaviour:
     down: 0
     press: 0
     release: 0
-  ActionButton: 
   anim: {fileID: 490064721815060290}
   body: {fileID: 490064721815060289}
   horizontalSpeed: 3
@@ -51,6 +50,10 @@ MonoBehaviour:
     name: 
     fmodFile: event:/SFX/Characters/Step Small
     parameters: []
+  fallSound:
+    name: 
+    fmodFile: event:/SFX/Characters/JumFall Small
+    parameters: []
   shootPoint: {fileID: 8933166372821708720}
   pointer: {fileID: 2772063324256641559}
   bulletPrefab: {fileID: 3911073580239865827, guid: 93ccc2eb19aa5324688327443d66219a,
@@ -59,7 +62,7 @@ MonoBehaviour:
   shootY: 0.5
   shootSound:
     name: 
-    fmodFile: 
+    fmodFile: event:/SiliconeGun/Shoot
     parameters: []
   isGrabbed: 0
   maxBullets: 5
@@ -996,11 +999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Offset.x
-      value: -0.08537346
+      value: -0.076897055
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Size.x
-      value: 1.9504231
+      value: 1.255353
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Offset.y
@@ -1069,7 +1072,22 @@ PrefabInstance:
     - target: {fileID: 1954735066391934700, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.29
+      value: -1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954735066391934700, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858649992130495371, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.027941495
+      objectReference: {fileID: 0}
+    - target: {fileID: 5858649992130495371, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.43970755
       objectReference: {fileID: 0}
     - target: {fileID: 7413825513547993419, guid: 4f358ed2de98720488cf6d3f6b8ff5d4,
         type: 3}
