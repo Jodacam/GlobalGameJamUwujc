@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5974866451189165404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.82, y: 0.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17740035, y: 0.048920393}
+  m_Offset: {x: -0.17740035, y: 0.68117714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -107,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.929202, y: 6.3129663}
+  m_Size: {x: 2.929202, y: 7.5774794}
   m_EdgeRadius: 0
 --- !u!114 &2469939571060694459
 MonoBehaviour:
@@ -131,4 +131,6 @@ MonoBehaviour:
   leverSound:
     name: 
     fmodFile: event:/SFX/Actions/Lever
-    parameters: []
+    parameters:
+    - Name: On-Off
+      Value: 0
