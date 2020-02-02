@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mapa2New
       objectReference: {fileID: 0}
+    - target: {fileID: 2601726429991687022, guid: 8881246b2b059b54f81b20d6e2fb4916,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2640613729447367050, guid: 8881246b2b059b54f81b20d6e2fb4916,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5705,6 +5710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mapa5_SalaPropulsorNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7377575029327941230, guid: 00907f054bb5abf4086b08631dc5cb10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9004778888419681256, guid: 00907f054bb5abf4086b08631dc5cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8891,6 +8901,7 @@ MonoBehaviour:
     name: 
     fmodFile: 
     parameters: []
+  emiters: []
 --- !u!4 &1413071311
 Transform:
   m_ObjectHideFlags: 0
