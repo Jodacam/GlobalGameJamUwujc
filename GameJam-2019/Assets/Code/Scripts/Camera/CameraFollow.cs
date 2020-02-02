@@ -24,10 +24,10 @@ public class CameraFollow : MonoBehaviour
     {
         if(following)
         {
-            Vector3 middlePoint = new Vector3(smallPlayer.transform.position.x+bigPlayer.transform.position.x, smallPlayer.transform.position.y + bigPlayer.transform.position.y, 0);
-            float distance = (middlePoint - transform.position).magnitude;
-            Vector2 position = Vector2.Lerp(transform.position,middlePoint,Mathf.Min(1-(Mathf.Sqrt(distance)/distance),1));
-            transform.position = new Vector3(position.x, position.y, transform.position.z);
+            float middlePoint = (smallPlayer.transform.position.x + bigPlayer.transform.position.x) / 2;
+            float distance = middlePoint - transform.position.x;
+            float position = Mathf.Lerp(transform.position.x,middlePoint,Mathf.Min(1-(Mathf.Sqrt(distance)/distance),1));
+            transform.position = new Vector3(position, transform.position.y, transform.position.z);
         }
     }
 }
