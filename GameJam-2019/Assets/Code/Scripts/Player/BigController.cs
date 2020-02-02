@@ -14,6 +14,8 @@ public class BigController : PlayerController
 
     [SerializeField] private Sound throwSound;
 
+    private Coroutine throwRutine = null;
+
     private bool isGrabbing;
 
     // Start is called before the first frame update
@@ -34,13 +36,23 @@ public class BigController : PlayerController
             {
                 this.anim.SetTrigger("action");
                 this.throwSound.Play(transform);
-                Throw();
+
+                if(this.throwRutine == null)
+                    this.throwRutine = StartCoroutine(delay());
+                
             }
             else
             {
                 Grab();
             }
         }
+    }
+
+
+    private IEnumerator delay(){
+        yield return new WaitForSeconds(0.5f);
+        Throw();
+        this.throwRutine = null;
     }
 
     protected override void ProcessMovement()
