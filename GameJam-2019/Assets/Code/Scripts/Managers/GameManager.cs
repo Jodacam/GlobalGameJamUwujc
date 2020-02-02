@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Doozy.Engine.UI;
+using FMODUnity;
 using System;
 
 //Manager del juego. Aquí podemos guardar los progresos que se van haciendo e ir compronaod con los objetos.
@@ -26,6 +27,10 @@ public class GameManager : SerializedMonoBehaviour
     public Dictionary<string, GameObject> maps;
 
     public Sound loadSound;
+
+    public StudioEventEmitter[] emiters;
+
+    private int music = 0;
 
 
     public static GameManager Instance
@@ -82,6 +87,12 @@ public class GameManager : SerializedMonoBehaviour
     public IEnumerator loadMap(string map)
     {
         load.Show();
+        this.emiters[music].EventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+        music = (music+1) % this.emiters.Length;
+
+        this.emiters[music].EventInstance.start();
+        
         yield return new WaitForSeconds(1);
 
         var bullets = FindObjectsOfType<SiliconeBullet>();
