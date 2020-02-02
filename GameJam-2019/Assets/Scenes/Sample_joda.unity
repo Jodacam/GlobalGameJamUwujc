@@ -202,6 +202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mapa4_SalaMapasNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2056797673405574781, guid: b84915c3673c4a043bf46cd1aa8b4c9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3618277292483797343, guid: b84915c3673c4a043bf46cd1aa8b4c9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1205,7 +1210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &450519014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1867,7 +1872,7 @@ PrefabInstance:
     - target: {fileID: 3914773101820785327, guid: face985e667c45b4cb67a16960eb907f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: face985e667c45b4cb67a16960eb907f, type: 3}
@@ -2619,7 +2624,7 @@ PrefabInstance:
     - target: {fileID: 1204806472215814913, guid: f7a32d46c921ff342b2819fa2cf5b2ed,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2564104842391669879, guid: f7a32d46c921ff342b2819fa2cf5b2ed,
         type: 3}
@@ -8112,6 +8117,7 @@ GameObject:
   - component: {fileID: 1413071311}
   - component: {fileID: 1413071310}
   - component: {fileID: 1413071312}
+  - component: {fileID: 1413071313}
   m_Layer: 0
   m_Name: Maps
   m_TagString: Untagged
@@ -8257,6 +8263,9 @@ MonoBehaviour:
     name: 
     fmodFile: 
     parameters: []
+  emiters:
+  - {fileID: 1413071313}
+  - {fileID: 1413071312}
 --- !u!4 &1413071311
 Transform:
   m_ObjectHideFlags: 0
@@ -8289,7 +8298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/MSC/Intro
+  Event: event:/MSC/Tema 1
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -8298,8 +8307,31 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1413071313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413071309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/MSC/Tema 2
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1444335188
 GameObject:
   m_ObjectHideFlags: 0
