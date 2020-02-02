@@ -28,9 +28,9 @@ public class MovePlatform : MonoBehaviour
         {
             case 1:
 
-                var dir = endPoint.position - startPoint.position;
+                var dir = endPoint.position - transform.position;
 
-                if (dir.magnitude <= 0.1f)
+                if (Vector3.Distance(endPoint.position,transform.position) <= 0.1f)
                 {
                     moveState = 0;
                 }
@@ -45,9 +45,9 @@ public class MovePlatform : MonoBehaviour
 
                 break;
             case 2:
-                var dirBack = startPoint.position - endPoint.position;
+                var dirBack = startPoint.position - transform.position;
 
-                if (dirBack.magnitude <= 0.1f)
+                if (Vector3.Distance(transform.position,startPoint.position) <= 0.1)
                 {
                     moveState = 0;
                 }
