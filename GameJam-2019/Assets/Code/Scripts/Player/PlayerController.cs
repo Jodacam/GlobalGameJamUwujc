@@ -229,6 +229,8 @@ public class PlayerController : MonoBehaviour
 
     public void ChangePlayers()
     {
+        GetComponentInChildren<NumberSwap>().swapSprite();
+        this.otherPlayer.GetComponentInChildren<NumberSwap>().swapSprite();
         this.otherPlayer.playerNumber = this.otherPlayer.playerNumber == 1 ? 0 : 1;
         this.otherPlayer.setButtons();
 
