@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Doozy.Engine.UI;
+using System;
 
 //Manager del juego. Aquí podemos guardar los progresos que se van haciendo e ir compronaod con los objetos.
 public class GameManager : SerializedMonoBehaviour
@@ -38,6 +39,14 @@ public class GameManager : SerializedMonoBehaviour
             return _instance;
         }
     }
+
+    internal void RegisterKey(string fixName)
+    {
+        if(!fixedObjects.ContainsKey(fixName)){
+            fixedObjects.Add(fixName,false);
+        }
+    }
+
     void Start()
     {
         this.startUi.Hide();
