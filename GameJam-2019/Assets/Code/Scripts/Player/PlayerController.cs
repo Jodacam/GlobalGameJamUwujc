@@ -49,15 +49,12 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public InputState changeButton;
 
-    [SerializeField]
+    [HideInInspector]
     public InputState pointButton;
 
-    [SerializeField]
+    [HideInInspector]
     public InputState startButton;
 
-
-
-    public string ActionButton;
     public Animator anim;
 
     public Rigidbody2D body;
@@ -85,6 +82,8 @@ public class PlayerController : MonoBehaviour
 
     public Sound walkSound;
 
+    public Sound fallSound;
+
     public virtual void Start()
     {
         InitComponents();
@@ -95,6 +94,9 @@ public class PlayerController : MonoBehaviour
     {
 
 
+        fallSound.Init();
+
+        walkSound.Init();
 
         setButtons();
 
@@ -208,9 +210,13 @@ public class PlayerController : MonoBehaviour
 
         if (collide > 0 && this.body.velocity.y < 0.01f)
         {
+            if(!isGround){
+                this.fallSound.Play(transform,body);
+            }
             this.isGround = true;
 
             this.anim.SetBool(ANIM_GROUND, isGround);
+
         }
         else
         {
