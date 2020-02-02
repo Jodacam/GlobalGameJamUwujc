@@ -43,7 +43,8 @@ public class BigController : PlayerController
             }
             else
             {
-                Grab();
+                if(isGround)
+                    Grab();
             }
         }
     }
