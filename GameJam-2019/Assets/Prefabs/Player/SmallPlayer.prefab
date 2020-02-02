@@ -844,8 +844,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8519424032263351094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.192, y: 3.65, z: -4.5104156}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.12}
+  m_LocalPosition: {x: -0.192, y: 4, z: -4.5104156}
+  m_LocalScale: {x: 3, y: 3, z: 0.12}
   m_Children: []
   m_Father: {fileID: 490064721815060291}
   m_RootOrder: 5
@@ -889,7 +889,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6dac10fcb5e0b78458fdea0207745472, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfb06f9a638ceba409829644600cd759, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -913,8 +913,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 6dac10fcb5e0b78458fdea0207745472, type: 3}
-  - {fileID: 21300000, guid: 3be2706524dce8a4bb9d8e7eed7c30dc, type: 3}
+  - {fileID: 21300000, guid: bfb06f9a638ceba409829644600cd759, type: 3}
+  - {fileID: 21300000, guid: 6e519fbce56064d438c346845783d220, type: 3}
   iAmNumberOne: 1
 --- !u!1 &8985753641539760420
 GameObject:
@@ -1089,7 +1089,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Name
-      value: PlayerTwo
+      value: SmallPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_TagString
