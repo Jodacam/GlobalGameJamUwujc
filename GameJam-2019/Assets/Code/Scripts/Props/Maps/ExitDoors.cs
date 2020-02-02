@@ -14,7 +14,8 @@ public class ExitDoors : MonoBehaviour
     public Sound closeSound;
 
     public SpriteRenderer render;
-    private void Start() {
+    private void Start()
+    {
 
     }
 
@@ -25,15 +26,24 @@ public class ExitDoors : MonoBehaviour
         {
             var controller = other.GetComponent<PlayerController>();
 
-            players.Add(controller);
-            openSound.Play(transform);
-            render.sprite = sprites[1];
-
-            if (players.Count == 2)
+            if (controller)
             {
-                render.sprite = sprites[2];
-                GameManager.Instance.LoadMap(mapToLoad);
-                render.sprite = sprites[0];
+
+                var find = players.Find((e) => e == controller);
+
+                if (find == null)
+                {
+                    players.Add(controller);
+                    openSound.Play(transform);
+                    render.sprite = sprites[1];
+
+                    if (players.Count == 2)
+                    {
+                        render.sprite = sprites[2];
+                        GameManager.Instance.LoadMap(mapToLoad);
+                        render.sprite = sprites[0];
+                    }
+                }
             }
 
         }

@@ -9,6 +9,7 @@ TagManager:
   - Holder
   - Lever
   - Block
+  - Door
   layers:
   - Default
   - TransparentFX
