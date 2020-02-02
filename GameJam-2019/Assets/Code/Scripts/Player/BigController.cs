@@ -118,7 +118,6 @@ public class BigController : PlayerController
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("posicion caja " + collision.transform.position.y + " posicion gato " + transform.position.y);
         if (collision.gameObject.CompareTag("Block") && Mathf.Abs(collision.transform.position.y - transform.position.y) <= 1)
             anim.SetBool("push", true);
     }
