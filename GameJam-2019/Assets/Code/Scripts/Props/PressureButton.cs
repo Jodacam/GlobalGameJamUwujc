@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class PressureButton : MonoBehaviour
 {
     [SerializeField] private bool active;
+    [SerializeField] private Sprite[] sprites;
     private bool stayActive;
 
     [System.Serializable]
@@ -18,6 +19,7 @@ public class PressureButton : MonoBehaviour
     void Start()
     {
         active = false;
+        GetComponent<SpriteRenderer>().sprite = sprites[0];
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class PressureButton : MonoBehaviour
             active = true;
             positiveTrigger.Invoke();
             pushButton.Play(transform);
+            GetComponent<SpriteRenderer>().sprite = sprites[1];
         }
     }
 
@@ -51,6 +54,7 @@ public class PressureButton : MonoBehaviour
             active = false;
             negativeTrigger.Invoke();
             releaseButton.Play(transform);
+            GetComponent<SpriteRenderer>().sprite = sprites[0];
         }
     }
 
