@@ -51,7 +51,7 @@ public class BigController : PlayerController
 
 
     private IEnumerator delay(){
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
         Throw();
         this.throwRutine = null;
     }
