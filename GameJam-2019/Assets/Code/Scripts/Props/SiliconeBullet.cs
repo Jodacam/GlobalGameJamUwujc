@@ -33,8 +33,8 @@ public class SiliconeBullet : MonoBehaviour
 
     public Vector2 actualDir = Vector2.zero;
 
-    Vector3 originalScale;
-    void Start()
+    public Vector3 originalScale = new Vector3(0.45f,0.45f,0.45f);
+    void Awake()
     {
         originalScale = this.transform.localScale;
         if (render == null)
@@ -146,7 +146,7 @@ public class SiliconeBullet : MonoBehaviour
         transform.SetParent(null);
         transform.SetPositionAndRotation(position, rotation);
 
-        transform.localScale = new Vector3(transform.localScale.x * shootDir.x,transform.localScale.y);
+        transform.localScale = new Vector3(originalScale.x * shootDir.x,transform.localScale.y);
         gameObject.SetActive(true);
         this.actualDir = shootDir;
     }
