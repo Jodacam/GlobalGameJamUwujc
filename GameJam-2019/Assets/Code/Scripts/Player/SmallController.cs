@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,6 +22,8 @@ public class SmallController : PlayerController
     private SiliconeBullet[] bulletPool;
 
     private Vector2 shootDir;
+
+    public float shootY;
 
 
 
@@ -86,13 +89,12 @@ public class SmallController : PlayerController
             this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
         }
 
-        if (!this.pointButton.press)
-        {
+  
             this.anim.SetBool("hold", false);
             float xmove = xInput * horizontalSpeed * Time.deltaTime;
             transform.Translate(new Vector3(xmove, 0, 0));
 
-            this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
+            this.anim.SetFloat(ANIM_SPEED, Math.Abs(xmove));
             this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
 
             if (xInput != 0)
@@ -101,18 +103,8 @@ public class SmallController : PlayerController
             }
             pointer.SetActive(false);
 
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,0);
-        }
-        else
-        {
-            
-            this.anim.SetBool("hold", true);
-
-            pointer.SetActive(true);
-            this.shootDir = new Vector2(xInput, yInput).normalized;
-
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x, this.shootDir.y);
-        }
+            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,shootY);
+        
 
 
 
@@ -143,6 +135,7 @@ public class SmallController : PlayerController
 
                 bulletInstance.Init(pointer.transform.position, Quaternion.identity, this.shootDir);
 
+                this.anim.SetTrigger("action");
 
                 actualPool = (actualPool + 1) % this.bulletPool.Length;
                 //Instantiate(bullet, shootPoint.position, Quaternion.identity);

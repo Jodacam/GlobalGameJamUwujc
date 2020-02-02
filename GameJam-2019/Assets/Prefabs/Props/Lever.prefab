@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe1f661a624b8474eba65568b66b7ba3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8df5e4fbaba70948b20d9d038470d82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,18 +96,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.121320486}
+  m_Offset: {x: -0.17740035, y: -0.43810487}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4, y: 1.4}
+    oldSize: {x: 6.4, y: 6.4}
     newSize: {x: 1.4, y: 1.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.699038, y: 1.157359}
+  m_Size: {x: 2.929202, y: 5.338916}
   m_EdgeRadius: 0
 --- !u!114 &2469939571060694459
 MonoBehaviour:
@@ -122,10 +122,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeToggle: 0
-  active: {fileID: 21300000, guid: fe1f661a624b8474eba65568b66b7ba3, type: 3}
-  notActive: {fileID: 21300000, guid: 4e8b74264bd036e47b92307f56bd5687, type: 3}
+  active: {fileID: 21300000, guid: 860b14f5e8861cd46a38da655f9896fd, type: 3}
+  notActive: {fileID: 21300000, guid: 7db58fbe5de42a64db73011ae019d855, type: 3}
+  toggle:
+    m_PersistentCalls:
+      m_Calls: []
   render: {fileID: 5267286206980047127}
   leverSound:
     name: 
-    fmodFile: 
+    fmodFile: event:/SFX/Actions/Lever
     parameters: []

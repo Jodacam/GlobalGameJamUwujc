@@ -5,7 +5,7 @@
             <value>Impact</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="folder">
             <destination>{b57408b6-777e-494e-980a-14b0b49e8ea6}</destination>
@@ -56,7 +56,11 @@
             <destination>{40a474a1-81d3-4d05-ac7c-81c9e64fde3d}</destination>
         </relationship>
     </object>
-    <object class="EventAutomatableProperties" id="{53137083-9b3c-414a-acb0-7a73ca1d6669}"/>
+    <object class="EventAutomatableProperties" id="{53137083-9b3c-414a-acb0-7a73ca1d6669}">
+        <property name="maxVoices">
+            <value>4</value>
+        </property>
+    </object>
     <object class="MarkerTrack" id="{77e435e8-2afa-42cf-bb5b-c5abfde082c9}"/>
     <object class="GroupTrack" id="{c7ab779c-7c64-4a3b-b32c-ba2789c2eec4}">
         <relationship name="modules">
@@ -120,10 +124,13 @@
     <object class="MixerBusEffectChain" id="{ba1c7603-cc55-4c50-8733-84b2905ec60b}">
         <relationship name="effects">
             <destination>{28463b56-9f8c-400a-8941-52e9f3dbfcc8}</destination>
-            <destination>{f4b250e6-3057-4761-881b-4b75d3a4365b}</destination>
         </relationship>
     </object>
-    <object class="MixerBusPanner" id="{e4f6ae52-93c5-46f2-97e9-23bea0c8749a}"/>
+    <object class="MixerBusPanner" id="{e4f6ae52-93c5-46f2-97e9-23bea0c8749a}">
+        <property name="outputFormatOverridden">
+            <value>true</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{ff906ae5-bd67-474e-b1cf-2b603dda0cf6}"/>
     <object class="FadeCurve" id="{40bbac1b-b6f1-4313-bcf6-7fbf1fc174f8}">
         <relationship name="startPoint">
@@ -165,7 +172,6 @@
     </object>
     <object class="MixerBusPanner" id="{e7d6d852-7fbd-49c6-b747-c93bb162a206}"/>
     <object class="MixerBusFader" id="{28463b56-9f8c-400a-8941-52e9f3dbfcc8}"/>
-    <object class="SpatialiserEffect" id="{f4b250e6-3057-4761-881b-4b75d3a4365b}"/>
     <object class="AutomationPoint" id="{f1bce4fe-322a-4f4f-b52a-e95671206ffc}">
         <property name="position">
             <value>0.25</value>

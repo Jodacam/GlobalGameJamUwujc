@@ -7,10 +7,15 @@ public class ExitDoors : MonoBehaviour
 
     public List<PlayerController> players;
 
+    public Sprite[] sprites;
     public string mapToLoad = "";
 
+    public Sound openSound;
+    public Sound closeSound;
+
+    public SpriteRenderer render;
     private void Start() {
-        
+
     }
 
 
@@ -21,10 +26,14 @@ public class ExitDoors : MonoBehaviour
             var controller = other.GetComponent<PlayerController>();
 
             players.Add(controller);
+            openSound.Play(transform);
+            render.sprite = sprites[1];
 
-            if (players.Count > 2)
+            if (players.Count == 2)
             {
+                render.sprite = sprites[2];
                 GameManager.Instance.LoadMap(mapToLoad);
+                render.sprite = sprites[0];
             }
 
         }
@@ -35,8 +44,9 @@ public class ExitDoors : MonoBehaviour
         if (other.tag == "Player")
         {
             var controller = other.GetComponent<PlayerController>();
-
+            closeSound.Play(transform);
             players.Remove(controller);
+            render.sprite = sprites[0];
 
         }
     }

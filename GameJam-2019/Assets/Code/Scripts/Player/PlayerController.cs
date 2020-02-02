@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
             this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
         }
 
-        this.anim.SetFloat(ANIM_SPEED, this.body.velocity.x);
+        this.anim.SetFloat(ANIM_SPEED, Math.Abs(xmove));
         this.anim.SetFloat(ANIM_YSPEED, this.body.velocity.y);
     }
 

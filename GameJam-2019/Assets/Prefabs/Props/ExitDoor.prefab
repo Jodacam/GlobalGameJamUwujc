@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a53c4db4e0ab5e449c1e95699f2b8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fb5422e8c6633645acddde720ec01b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
-  mapToLoad: map_2
+  sprites:
+  - {fileID: 21300000, guid: 5fb5422e8c6633645acddde720ec01b9, type: 3}
+  - {fileID: 21300000, guid: abb4402c22609554fa02f20b70ddfc63, type: 3}
+  - {fileID: 21300000, guid: 72817f0398b10b7419f648e32ccf5a30, type: 3}
+  mapToLoad: 
+  openSound:
+    name: 
+    fmodFile: event:/SFX/Stage/Door Open
+    parameters: []
+  closeSound:
+    name: 
+    fmodFile: event:/SFX/Stage/Door Close
+    parameters: []
+  render: {fileID: 6912856735842539651}
 --- !u!61 &6912856736371549224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141,7 +154,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.030915618, y: -0.24519205}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -152,5 +165,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.1545944, y: 4.6110106}
   m_EdgeRadius: 0
