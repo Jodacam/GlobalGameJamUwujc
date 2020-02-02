@@ -33,11 +33,11 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637162041124997873
+  lastModified: 637162333413176162
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2160
+    Value: 2164
   Exists: 1
 --- !u!114 &-8667024749740485085
 MonoBehaviour:
@@ -74,11 +74,29 @@ MonoBehaviour:
   - {fileID: -5227603538108263420}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3998957084779813464}
   MinDistance: 0
   MaxDistance: 0
-  Length: 23612
+  Length: 87388
+--- !u!114 &-8396932585544480662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lever/On-Off
+  m_EditorClassIdentifier: 
+  Name: On-Off
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8365113408379998714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,8 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/UI/Slider
   guid: 6834764f476c6a44bcc8f4760fcf066b
-  Banks:
-  - {fileID: -5227603538108263420}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -309,7 +326,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6064867505474769842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,11 +381,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637162041124997873
+  lastModified: 637162333413156245
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4593184
+    Value: 4796864
   Exists: 1
 --- !u!114 &-5217107551173021066
 MonoBehaviour:
@@ -447,7 +464,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 7556557915724303828}
+  - {fileID: -8396932585544480662}
   MinDistance: 0
   MaxDistance: 0
   Length: 394
@@ -542,6 +559,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-3998957084779813464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala vigilancia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-3913170931629104965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +733,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8343123323543598008}
+  - {fileID: 7355092300426711819}
   MinDistance: 0
   MaxDistance: 0
   Length: 82709
@@ -769,7 +803,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 428
 --- !u!114 &-714416021622887448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,18 +944,18 @@ MonoBehaviour:
   - {fileID: 6112764296939646323}
   - {fileID: 2778580585660467398}
   - {fileID: -738820306637751164}
-  - {fileID: -6807914126627627113}
   - {fileID: -8365113408379998714}
   - {fileID: -210748485633045604}
   - {fileID: 7090920416219608769}
   - {fileID: 7248818151161704125}
   - {fileID: -6064867505474769842}
   - {fileID: -714416021622887448}
+  - {fileID: 3154014125875145369}
   MasterBanks:
   - {fileID: -5227603538108263420}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637162041124997873
+  stringsBankWriteTime: 637162333413176162
   cacheVersion: 3
 --- !u!114 &30686117696454595
 MonoBehaviour:
@@ -962,6 +996,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 23612
+--- !u!114 &1137618768290276091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala megafonia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &1189076256406911711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,7 +1236,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6112178468258111925}
+  - {fileID: 1137618768290276091}
   MinDistance: 0
   MaxDistance: 0
   Length: 108388
@@ -1332,6 +1383,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4529536
   Exists: 0
+--- !u!114 &3154014125875145369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Next Level
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Next Level
+  guid: 88e6a8ff62fce943ba0d455f6397d37e
+  Banks:
+  - {fileID: -5227603538108263420}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3179342269277877803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,7 +1471,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 15000
+  Length: 54355
 --- !u!114 &3612436711050797654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,6 +1853,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 306
+--- !u!114 &7355092300426711819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala calderas/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &7556557915724303828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,7 +1886,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &7615695722367886843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,7 +1920,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8633105159266926120
 MonoBehaviour:
   m_ObjectHideFlags: 0
