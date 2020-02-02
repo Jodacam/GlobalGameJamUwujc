@@ -15,12 +15,13 @@ public class FixPipe : MapObject, IFixable
 
     public bool CanFix()
     {
-       return isFixed;
+       return !isFixed;
     }
 
     public void Fix()
     {
         GameManager.Instance.SetFix(fixName,true);
+        render.sprite = sprites[1];
     }
 
     public override void OnMapLoad()
