@@ -42,12 +42,14 @@ public class GameManager : SerializedMonoBehaviour
     }
 
 
-    public void Pause(){
+    public void Pause()
+    {
         this.pause = true;
         this.pauseMenu.Show();
     }
 
-    public void UnPause(){
+    public void UnPause()
+    {
         this.pause = false;
         this.pauseMenu.Hide();
     }
@@ -109,7 +111,7 @@ public class GameManager : SerializedMonoBehaviour
         }
 
         pause = false;
-    load.Hide();
+        load.Hide();
 
     }
 
