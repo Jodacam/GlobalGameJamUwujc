@@ -33,11 +33,11 @@ MonoBehaviour:
   m_Name: bank:/Master Bank.strings.bank
   m_EditorClassIdentifier: 
   Path: FMOD\JamFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637162392051247318
+  lastModified: 637162435819255442
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2256
+    Value: 2344
   Exists: 1
 --- !u!114 &-8938846311968757584
 MonoBehaviour:
@@ -55,7 +55,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8667024749740485085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6751036446496768304}
+  - {fileID: -1018559549397954224}
   MinDistance: 0
   MaxDistance: 0
   Length: 87388
@@ -270,7 +270,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7215412256251593666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +340,23 @@ MonoBehaviour:
   m_Name: parameter:/Sala vigilancia/Pre-Post
   m_EditorClassIdentifier: 
   Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-6745551380546090632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lever/On-Off
+  m_EditorClassIdentifier: 
+  Name: On-Off
   Min: 0
   Max: 1
   Default: 0
@@ -606,7 +623,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -522409777006756584}
+  - {fileID: -6745551380546090632}
   MinDistance: 0
   MaxDistance: 0
   Length: 394
@@ -792,6 +809,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-3192037290993970930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala calderas/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-3175744894493483854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,7 +943,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7282672583559394259}
+  - {fileID: -3192037290993970930}
   MinDistance: 0
   MaxDistance: 0
   Length: 82709
@@ -950,6 +984,46 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13378
   Exists: 0
+--- !u!114 &-1018559549397954224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala vigilancia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-1007218003086369908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Voice Big
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Voice Big
+  guid: 610ebd53b937004ebd8dff4fd9f04879
+  Banks:
+  - {fileID: 6550098389997322225}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 492
 --- !u!114 &-785177785952955543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1070,7 +1144,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-255530266734798028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,11 +1237,13 @@ MonoBehaviour:
   - {fileID: 6838881285913581631}
   - {fileID: -8020617341531682853}
   - {fileID: 2972646380408897359}
+  - {fileID: -1007218003086369908}
+  - {fileID: 5409780555659980713}
   MasterBanks:
   - {fileID: 6550098389997322225}
   StringsBanks:
   - {fileID: -9087173361617540311}
-  stringsBankWriteTime: 637162392051247318
+  stringsBankWriteTime: 637162435819255442
   cacheVersion: 3
 --- !u!114 &30686117696454595
 MonoBehaviour:
@@ -1465,7 +1541,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8938846311968757584}
+  - {fileID: 4259164175897544761}
   MinDistance: 0
   MaxDistance: 0
   Length: 108388
@@ -1781,6 +1857,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &4259164175897544761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sala megafonia/Pre-Post
+  m_EditorClassIdentifier: 
+  Name: Pre-Post
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4275933530004481199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,6 +2008,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5409780555659980713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Characters/Voice Small
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Characters/Voice Small
+  guid: a6757c866710794297578ad03867065a
+  Banks:
+  - {fileID: 6550098389997322225}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 392
 --- !u!114 &5491056006315690671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,11 +2205,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Git\GlobalGameJamUwujc\GameJam-2019\FMOD\JamFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 637162392051227371
+  lastModified: 637162435819175524
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 8211136
+    Value: 8221888
   Exists: 1
 --- !u!114 &6639381060912114939
 MonoBehaviour:

@@ -84,7 +84,7 @@ public class SiliconeBullet : MonoBehaviour
 
     private void CheckCollision(Collider2D other)
     {
-        
+
         if (other.tag != "Player" && other.tag != "Holder" && other.tag != "Door")
         {
             if (other.tag == "Bullet" || other.tag == "Block")
