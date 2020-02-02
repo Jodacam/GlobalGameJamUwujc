@@ -59,7 +59,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3911073580239865827, guid: 93ccc2eb19aa5324688327443d66219a,
     type: 3}
   poolContainer: {fileID: 4356800202486828850}
-  shootY: 0.5
+  shootY: 1
   shootSound:
     name: 
     fmodFile: event:/SiliconeGun/Shoot
@@ -991,7 +991,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Name
-      value: SmallPlayer
+      value: PlayerTwo
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035380, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_TagString
@@ -1015,11 +1015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8.62
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -3.27
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.z
