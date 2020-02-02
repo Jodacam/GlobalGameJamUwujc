@@ -14,6 +14,8 @@ public class GameManager : SerializedMonoBehaviour
     public UIView pauseMenu;
     public UIView load;
 
+    public UIView startUi;
+
     public GameObject actualMap;
 
     public PlayerController[] players;
@@ -38,7 +40,7 @@ public class GameManager : SerializedMonoBehaviour
     }
     void Start()
     {
-
+        this.startUi.Hide();
     }
 
 
