@@ -10,6 +10,10 @@ public class BigController : PlayerController
 
     [SerializeField] private Vector2 throwForce;
 
+    [SerializeField] private Sound grabSound;
+
+    [SerializeField] private Sound throwSound;
+
     private bool isGrabbing;
 
     // Start is called before the first frame update
@@ -29,6 +33,7 @@ public class BigController : PlayerController
             if(isGrabbing)
             {
                 this.anim.SetTrigger("action");
+                this.throwSound.Play(transform);
                 Throw();
             }
             else
@@ -49,6 +54,7 @@ public class BigController : PlayerController
             if (itemInFocus.CompareTag("Player"))
                 itemInFocus.GetComponent<SmallController>().isGrabbed = true;
             this.anim.SetTrigger("action");
+            this.grabSound.Play(transform);
         }
     }
 

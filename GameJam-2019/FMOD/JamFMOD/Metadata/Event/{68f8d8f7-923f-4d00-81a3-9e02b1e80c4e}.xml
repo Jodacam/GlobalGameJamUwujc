@@ -96,6 +96,9 @@
         <property name="length">
             <value>54.355458333333331</value>
         </property>
+        <relationship name="fadeOutCurve">
+            <destination>{d0d57dd4-4444-49b4-a42c-d2243289c262}</destination>
+        </relationship>
         <relationship name="audioFile">
             <destination>{aefd9e07-cd73-4c7f-828a-239e269c48eb}</destination>
         </relationship>
@@ -131,6 +134,14 @@
         </property>
     </object>
     <object class="MixerBusFader" id="{c4411832-83ae-4aa4-8eca-eaf8075fdca0}"/>
+    <object class="FadeCurve" id="{d0d57dd4-4444-49b4-a42c-d2243289c262}">
+        <relationship name="startPoint">
+            <destination>{e09b5735-b618-485b-93f3-16952789abf9}</destination>
+        </relationship>
+        <relationship name="endPoint">
+            <destination>{5707c317-8478-4e0a-93f2-1402b26bda24}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusEffectChain" id="{6f6834f7-c196-4efd-9bac-3cca566c376d}">
         <relationship name="effects">
             <destination>{2f19c1e9-f390-4dc5-8d97-28bb1fe9e763}</destination>
@@ -138,5 +149,24 @@
     </object>
     <object class="MixerBusPanner" id="{da6e298d-8c30-44a8-bd55-708f7f2eb876}"/>
     <object class="MixerBusFader" id="{af4ec34a-1640-4977-81ce-684c7e6b58e6}"/>
+    <object class="AutomationPoint" id="{e09b5735-b618-485b-93f3-16952789abf9}">
+        <property name="position">
+            <value>50</value>
+        </property>
+        <property name="value">
+            <value>1</value>
+        </property>
+        <property name="curveShape">
+            <value>0.25471893</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{5707c317-8478-4e0a-93f2-1402b26bda24}">
+        <property name="position">
+            <value>54.355458333333331</value>
+        </property>
+        <property name="value">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{2f19c1e9-f390-4dc5-8d97-28bb1fe9e763}"/>
 </objects>
