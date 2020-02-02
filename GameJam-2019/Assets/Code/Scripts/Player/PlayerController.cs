@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    protected void ProcessMovement()
+    protected virtual void ProcessMovement()
     {
         float xmove = xInput * horizontalSpeed * Time.deltaTime;
         transform.Translate(new Vector3(xmove, 0, 0));
