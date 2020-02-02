@@ -23,6 +23,8 @@ public class SmallController : PlayerController
 
     private Vector2 shootDir;
 
+    public float shootY;
+
 
 
     public Sound shootSound;
@@ -87,8 +89,7 @@ public class SmallController : PlayerController
             this.transform.localScale = new Vector2(direction*Mathf.Abs(this.transform.localScale.x),this.transform.localScale.y);
         }
 
-        if (!this.pointButton.press)
-        {
+  
             this.anim.SetBool("hold", false);
             float xmove = xInput * horizontalSpeed * Time.deltaTime;
             transform.Translate(new Vector3(xmove, 0, 0));
@@ -102,18 +103,8 @@ public class SmallController : PlayerController
             }
             pointer.SetActive(false);
 
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,0);
-        }
-        else
-        {
-            
-            this.anim.SetBool("hold", true);
-
-            pointer.SetActive(true);
-            this.shootDir = new Vector2(xInput, yInput).normalized;
-
-            pointer.transform.position = transform.position + new Vector3(this.shootDir.x, this.shootDir.y);
-        }
+            pointer.transform.position = transform.position + new Vector3(this.shootDir.x,shootY);
+        
 
 
 
