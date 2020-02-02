@@ -15,7 +15,8 @@ public class Sound
     [SerializeField]
     private List<ParamRef> parameters;
 
-    public void Init(){
+    public void Init()
+    {
         if (fmodFile != null && fmodFile != "" && !instance.isValid())
         {
             instance = RuntimeManager.CreateInstance(fmodFile);
@@ -31,6 +32,15 @@ public class Sound
             instance.start();
             RuntimeManager.AttachInstanceToGameObject(instance, transform, rigidbody);
         }
+        else
+        {
+            Init();
+            if (instance.isValid())
+            {
+                instance.start();
+                RuntimeManager.AttachInstanceToGameObject(instance, transform, rigidbody);
+            }
+        }
     }
 
     public void Play(Transform transform)
@@ -39,6 +49,15 @@ public class Sound
         {
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
             instance.start();
+        }
+        else
+        {
+            Init();
+            if (instance.isValid())
+            {
+                instance.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+                instance.start();
+            }
         }
     }
 

@@ -32,8 +32,11 @@ public class SiliconeBullet : MonoBehaviour
     public BulletState state;
 
     public Vector2 actualDir = Vector2.zero;
+
+    Vector3 originalScale;
     void Start()
     {
+        originalScale = this.transform.localScale;
         if (render == null)
         {
             render = GetComponent<SpriteRenderer>();
@@ -62,6 +65,7 @@ public class SiliconeBullet : MonoBehaviour
 
     public void Reset()
     {
+        this.transform.localScale = originalScale;
         this.ChangeState(BulletState.Moving);
         gameObject.SetActive(false);
     }
@@ -140,6 +144,8 @@ public class SiliconeBullet : MonoBehaviour
     {
         transform.SetParent(null);
         transform.SetPositionAndRotation(position, rotation);
+
+        transform.localScale = new Vector3(transform.localScale.x * shootDir.x,transform.localScale.y);
         gameObject.SetActive(true);
         this.actualDir = shootDir;
     }

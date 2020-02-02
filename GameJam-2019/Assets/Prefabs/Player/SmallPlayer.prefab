@@ -56,6 +56,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3911073580239865827, guid: 93ccc2eb19aa5324688327443d66219a,
     type: 3}
   poolContainer: {fileID: 4356800202486828850}
+  shootY: 0.5
   shootSound:
     name: 
     fmodFile: 
