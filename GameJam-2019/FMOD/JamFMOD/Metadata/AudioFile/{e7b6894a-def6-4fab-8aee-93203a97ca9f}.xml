@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{e7b6894a-def6-4fab-8aee-93203a97ca9f}">
+        <property name="assetPath">
+            <value>Amb_SalaCamaras.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>16.357791666666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{d6a76e18-bc58-4c11-80e3-56c428795893}</destination>
+        </relationship>
+    </object>
+</objects>
