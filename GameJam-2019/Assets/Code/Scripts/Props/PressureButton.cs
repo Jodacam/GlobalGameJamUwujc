@@ -7,10 +7,11 @@ public class PressureButton : MonoBehaviour
 {
     [SerializeField] private bool active;
     private bool stayActive;
-    
+
     [System.Serializable]
     public class Action : UnityEvent { };
-
+    public Sound pushButton;
+    public Sound releaseButton;
     public Action positiveTrigger;
     public Action negativeTrigger;
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class PressureButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +32,7 @@ public class PressureButton : MonoBehaviour
         {
             active = true;
             positiveTrigger.Invoke();
+            pushButton.Play(transform);
         }
     }
 
@@ -48,6 +50,7 @@ public class PressureButton : MonoBehaviour
         {
             active = false;
             negativeTrigger.Invoke();
+            releaseButton.Play(transform);
         }
     }
 

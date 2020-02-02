@@ -143,3 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7187c12c8a579c4f803d3e999116016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impactSound:
+    name: 
+    fmodFile: event:/SFX/Actions/Box Fall Impact
+    parameters: []
+  moveSound:
+    name: 
+    fmodFile: event:/SFX/Actions/Box Drag
+    parameters: []
