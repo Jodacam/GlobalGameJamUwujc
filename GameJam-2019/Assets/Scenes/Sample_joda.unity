@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mapa2New
       objectReference: {fileID: 0}
+    - target: {fileID: 2601726429991687022, guid: 8881246b2b059b54f81b20d6e2fb4916,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2640613729447367050, guid: 8881246b2b059b54f81b20d6e2fb4916,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5705,6 +5710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mapa5_SalaPropulsorNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7377575029327941230, guid: 00907f054bb5abf4086b08631dc5cb10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9004778888419681256, guid: 00907f054bb5abf4086b08631dc5cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8746,6 +8756,7 @@ GameObject:
   - component: {fileID: 1413071311}
   - component: {fileID: 1413071310}
   - component: {fileID: 1413071312}
+  - component: {fileID: 1413071313}
   m_Layer: 0
   m_Name: Maps
   m_TagString: Untagged
@@ -8891,6 +8902,9 @@ MonoBehaviour:
     name: 
     fmodFile: 
     parameters: []
+  emiters:
+  - {fileID: 1413071313}
+  - {fileID: 1413071313}
 --- !u!4 &1413071311
 Transform:
   m_ObjectHideFlags: 0
@@ -8923,7 +8937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/MSC/Intro
+  Event: event:/MSC/Tema 1
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
@@ -8932,8 +8946,31 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1413071313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413071309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/MSC/Tema 2
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1430121497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9427,10 +9464,10 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.42083484, g: 0.42237377, b: 0.46226418, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 000000005f4a9fa2
+  m_ApplyToSortingLayers: 5f4a9fa2
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

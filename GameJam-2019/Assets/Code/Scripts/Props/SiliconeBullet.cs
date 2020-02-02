@@ -73,16 +73,16 @@ public class SiliconeBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(this.state == BulletState.Moving)
-        CheckCollision(other);
+        CheckCollision(other,transform.position);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(this.state == BulletState.Moving)
-        CheckCollision(other.gameObject.GetComponent<Collider2D>());
+        CheckCollision(other.gameObject.GetComponent<Collider2D>(),other.contacts[0].point);
     }
 
-    private void CheckCollision(Collider2D other)
+    private void CheckCollision(Collider2D other,Vector2 position)
     {
         
         if (other.tag != "Player" && other.tag != "Holder" && other.tag != "Door")
@@ -104,7 +104,7 @@ public class SiliconeBullet : MonoBehaviour
                 }
                 else
                 {
-
+                    this.transform.position = position;
                     ChangeState(BulletState.Stick);
 
                 }
