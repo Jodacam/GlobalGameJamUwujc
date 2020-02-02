@@ -100,6 +100,32 @@ MonoBehaviour:
     name: 
     fmodFile: 
     parameters: []
+--- !u!61 &2417721288164061906
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583457995969826789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1334211, y: -0.8488232}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6847921, y: 0.531126}
+  m_EdgeRadius: 0
 --- !u!1 &3019326933108127141
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,19 +860,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Offset.y
-      value: 0.34144938
+      value: 0.6058285
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Size.y
-      value: 2.8828988
+      value: 2.3541403
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Offset.x
-      value: -0.11953664
+      value: -0.13951343
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_Size.x
-      value: 1.0519289
+      value: 1.2751176
+      objectReference: {fileID: 0}
+    - target: {fileID: 9461974401035383, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9461974401035386, guid: 4f358ed2de98720488cf6d3f6b8ff5d4, type: 3}
       propertyPath: m_LocalPosition.x
