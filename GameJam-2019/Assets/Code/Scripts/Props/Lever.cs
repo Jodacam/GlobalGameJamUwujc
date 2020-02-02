@@ -44,10 +44,13 @@ public class Lever : MonoBehaviour, IFixable
         if (activeToggle)
         {
             this.render.sprite = this.active;
+            leverSound.SetParameter("On-Off",0);
         }
         else
         {
             this.render.sprite = this.notActive;
+            leverSound.SetParameter("On-Off",1);
+
         }
     }
 }
